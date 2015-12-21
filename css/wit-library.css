@@ -16,9 +16,7 @@ Header
 /* this is for screen readers. it needs to be font size 12 or you can see it in a regular browser */
 #s-lg-public-skiplink {font-size:12px} 
 
-/*****
-look and feel
-*****/
+/* look and feel */
 
 body {
 background:#f5f5f5
@@ -36,6 +34,34 @@ body {
    line-height: 1.5;
 }
 
+    #s-lg-guide-header-info h1,
+     .s-lib-header h1 {
+         font-size: 2em;
+         text-align: left;
+         letter-spacing: -0.1px; 
+     }
+     .s-lib-box .s-lib-box-title {
+         font-size: 1.5em;
+         letter-spacing: -0.1px
+     }
+     .s-lib-box-content h1,
+     .s-lib-box-content h2,
+     .s-lib-box-content h3 {
+         font-size: 1.5em;
+     }
+     .s-lib-box-content h4 {
+         font-size: 1.25em;
+     }
+     .s-lib-box-content h5 {
+         font-size: 1.125em;
+     }
+     .s-lg-book-title {
+         font-size: 1.125em;
+     }
+     .s-lg-link-list,
+     .s-lib-box-content ul {
+         padding-left: 40px;
+     }
  
 
 
