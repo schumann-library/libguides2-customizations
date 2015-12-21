@@ -16,7 +16,9 @@ Header
 /* this is for screen readers. it needs to be font size 12 or you can see it in a regular browser */
 #s-lg-public-skiplink {font-size:12px} 
 
-/* look and feel */
+/****** 
+look and feel
+******/
 
 body {
 background:#f5f5f5
