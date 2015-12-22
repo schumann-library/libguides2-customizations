@@ -46,11 +46,12 @@ body {
      .s-lib-header h1{
          font-size: 2em;
          text-align: left;
-         letter-spacing: -0.1px; 
+          
      }
      .s-lib-box .s-lib-box-title {
-         font-size: 1.5em;
-         letter-spacing: -0.1px
+         font-size: 1.75em;
+         border-bottom: 2px solid #444;
+         
      }
      .s-lib-box-content h1,
      .s-lib-box-content h2,
