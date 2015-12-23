@@ -3,4 +3,7 @@
 
 #s-lg-guide-header-info h1, .s-lib-header h1 {font-size:3em}
 
+#s-lib-public-main .s-lib-box-title {background-image:none;}
+#s-lib-public-main .s-lib-box {border:0px; box-shadow:none;}
+
 </style>
