@@ -38,7 +38,11 @@ a {color: #a94442}
 Typography
 ***********/
 
-body {font-size: 16px}
+/* make everything bigger */
+body {font-size: 16px;}
+
+/*but now the admin command bar is too big, let's fix that */
+.s-lg-guide-body .s-lib-cmd-bar {font-size:12px;}
 
 #s-lg-guide-header-info h1, .s-lib-header h1{
    font-size: 2em;
