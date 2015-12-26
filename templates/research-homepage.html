@@ -1,4 +1,4 @@
-	<body class="s-lib-public-body">
+<body class="s-lib-public-body">
 		{{skip_link}}
         <!-- BEGIN: Page Header -->
             {{public_header}}
@@ -22,9 +22,7 @@
         <!-- BEGIN: content -->
         <div id="s-lib-public-main" class="s-lib-main container s-lib-side-borders">
 
-<div id="my-research-homepage-content" class="row">
-   {{content_boxes}}
-   </div>
+
 
 
 
@@ -32,16 +30,19 @@
 
             <div  id="s-lg-index-cols"  class="row">
                 <div  id="col1"  class="col-md-8 center">
-                    <div class="clearfix">
-                        <div id="s-lg-hp-nav"> 
+                    <div id="my-research-homepage-content" class="row">
+                       {{content_boxes}}
+                    </div>
+                 <div class="clearfix">
+                        <div id="s-lg-hp-nav" class="col-md-12"> 
                             <ul>
                                 <li>
                                     <ul class="nav nav-pills">
                                         {{button_all_guides}}
-                                        {{button_by_group}}
+                                      <!--  {{button_by_group}} -->
                                         {{button_by_subject}}
                                         {{button_by_type}}
-                                        {{button_by_owner}}
+                                        <!-- {{button_by_owner}} -->
                                     </ul>
                                 </li>
                                 <li id="s-lg-hp-nav-bottom">
@@ -57,8 +58,8 @@
                         {{content}}
                     </div>
                 </div>
-                <div  id="col2"  class="col-md-4 center">
-                    {{content_boxes}}
+                <!-- <div  id="col2"  class="col-md-4 center">
+                    {{content_boxes}} -->
                 </div>
             </div>
         </div>
@@ -88,7 +89,7 @@
  <!-- END: Custom Footer -->
 <script>
 $(document).ready( function() {
-  $("#my-research-homepage-content .margin-bottom-xlg").addClass("col-md-4");
+  $("#my-research-homepage-content .margin-bottom-xlg").addClass("col-md-6");
 })
 </script>
 	</body>
