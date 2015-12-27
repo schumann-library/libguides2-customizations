@@ -22,4 +22,26 @@
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 
+/* make the nav bar nice */
+
+#s-lg-guide-tabs .list-group.s-lg-boxnav {
+    
+    margin-top: 0px;
+}
+
+#s-lg-guide-tabs .list-group.s-lg-boxnav .list-group-item {
+    margin-top: 0px;
+    margin-bottom: -1px;
+}
+
+#s-lg-guide-tabs .list-group-item:first-child {
+    
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+}
+
+#s-lg-guide-tabs > ul > li > a.active {
+ border-bottom-right-radius:0px !important;   
+}
+
 </style>
