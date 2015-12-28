@@ -24,7 +24,7 @@ Header
 /* look and feel */
 
 body {
-   background:#fff;
+   background:#e9eaed;
    color:#555
    }
 
@@ -32,7 +32,10 @@ a:focus, a:hover {color:#86100D}
 
 a {color: #a94442}
 
-
+.s-lib-box.s-lib-box-std {
+padding: 15px;
+box-shadow: 0 7px 23px -6px #AAAAAA;
+}
 
 /**********
 Typography
