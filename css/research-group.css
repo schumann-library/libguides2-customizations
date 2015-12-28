@@ -24,12 +24,12 @@
 
 /* make the nav bar nice */
 
-#s-lg-guide-tabs .list-group.s-lg-boxnav {
+#s-lg-guide-tabs .s-lg-boxnav {
     
     margin-top: 0px;
 }
 
-#s-lg-guide-tabs .list-group.s-lg-boxnav .list-group-item {
+#s-lg-guide-tabs .list-group-item {
     margin-top: 0px;
     margin-bottom: -1px;
 }
@@ -40,7 +40,7 @@ border-top-left-radius: 0px;
 border-top-right-radius: 0px;
 }
 
-#s-lg-guide-tabs > ul > li > a.active {
+#s-lg-guide-tabs .active {
  border-bottom-right-radius:0px !important;   
 }
 
