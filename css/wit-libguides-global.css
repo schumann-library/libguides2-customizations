@@ -11,8 +11,7 @@ Header
 
 #header {
    background: #444;
-   margin-left:-15px;
-   margin-right:-15px;
+  
    }
    
 #institutional_banner {color:#777}
@@ -25,7 +24,9 @@ Header
 
 body {
    background:#e9eaed;
-   color:#555
+   color:#555;
+   padding-left:0px;
+   padding-right:0px;
    }
 
 a:focus, a:hover {color:#86100D}
@@ -88,8 +89,7 @@ Footer
 /*override default footer max width */
 
 #s-lib-footer-public.container {
-  margin-left: -15px;
-  margin-right: -15px;
+ 
   max-width: inherit;
   width: inherit;
 }
