@@ -9,7 +9,7 @@ It is included on every page.
 Header 
 **********/
 
-#header {
+#my_header {
    background: #444;
   
    }
@@ -98,10 +98,6 @@ Footer
 /***** All Research Group  *****/
 
 
-
-
-/***** Research group Guide Pages *****/
-#my-research-guide-title {margin-bottom:30px}
 
 
 
