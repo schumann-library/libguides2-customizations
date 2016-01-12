@@ -50,7 +50,7 @@ a {color: #a94442}
 /***** Guide Title *****/
 h1#s-lg-guide-name, h1#s-lib-public-header-title {
    font-size: 2.5em;
-   font-weight: bold;
+   font-weight: normal;
    margin-top: 20px;
    margin-bottom:10px;
    }
@@ -103,7 +103,7 @@ h1#s-lg-guide-name, h1#s-lib-public-header-title {
 /**** boxes ****/
 .s-lib-box.s-lib-box-std {
 padding: 15px;
-box-shadow: 0 7px 23px -6px #AAAAAA;
+box-shadow: 0 7px 23px -6px #AAA;
    }
 
 .s-lib-box-content li > div {
@@ -111,8 +111,10 @@ box-shadow: 0 7px 23px -6px #AAAAAA;
    }
    
 .s-lib-box .s-lib-box-title  {
-   font-size: 1.75em;
-   border-bottom: 2px solid #444;
+   font-size: 1.5em;
+   border-bottom: 1px solid #ccc;
+   padding: 10px 0;
+   text-transform: uppercase;
    }
    
 
