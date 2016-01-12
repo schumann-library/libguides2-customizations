@@ -63,7 +63,7 @@ h1#s-lg-guide-name, h1#s-lib-public-header-title {
 
 /**** Side Nav Bar ****/
 
-#s-lg-guide-tabs .list-group-item >a {
+#s-lg-guide-tabs .list-group-item > a {
     display: block;
     padding: 10px 15px;
    -moz-transition: background-color 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
