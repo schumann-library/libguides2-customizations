@@ -14,7 +14,7 @@ body {
    color:#555;
    padding-left:0px;
    padding-right:0px;
-   font-size:16px;
+   font-size:14px;
    }
 
 a:focus, a:hover {
@@ -49,7 +49,7 @@ a {color: #a94442}
 
 /***** Guide Title *****/
 h1#s-lg-guide-name, h1#s-lib-public-header-title {
-   font-size: 2em;
+   font-size: 2.5em;
    font-weight: bold;
    margin-top: 20px;
    margin-bottom:10px;
@@ -115,7 +115,7 @@ box-shadow: 0 7px 23px -6px #AAAAAA;
    border-bottom: 2px solid #444;
    }
    
- 
+
 
 /*****************/
 /***** admin *****/
