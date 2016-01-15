@@ -48,13 +48,12 @@ a {color: #a94442}
 /****************************/
 
 /***** Guide Title *****/
-h1#s-lg-guide-name, h1#s-lib-public-header-title {
-   font-size: 36px;
+#s-lg-guide-name {
+   font-size: 36px !important;
    font-weight: normal;
-   margin-top: 20px;
-   margin-bottom:20px;
    text-transform: uppercase;
    }
+#s-lg-guide-header-info {margin:15px 0px;}
 
 
 
