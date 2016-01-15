@@ -37,8 +37,8 @@ a {color: #a94442}
   
    }
    
-#institutional_banner {color:#777}
-#library_logo {color:#FFBE3F}
+#institutional_banner {color:#777; padding-top: 10px; padding-bottom:10px;}
+#library_logo {color:#FFBE3F; margin-left:10px;font-family: georgia, serif;}
 
 /* this is for screen readers. it needs to be font size 12 or you can see it in a regular browser */
 #s-lg-public-skiplink {font-size:12px} 
