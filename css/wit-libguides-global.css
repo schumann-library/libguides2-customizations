@@ -57,7 +57,7 @@ a {color: #a94442}
 #s-lg-guide-name {
    font-size: 36px !important;
    font-weight: normal;
-   text-transform: uppercase;
+   
    }
 #s-lg-guide-header-info {margin:15px 0px;}
 
@@ -123,7 +123,7 @@ box-shadow: 0 7px 23px -6px #AAA;
    font-weight: normal;
    border-bottom: 1px solid #ccc;
    padding: 10px 0;
-   text-transform: uppercase;
+   
    }
    
 
