@@ -43,8 +43,14 @@ a {color: #a94442}
 /* this is for screen readers. it needs to be font size 12 or you can see it in a regular browser */
 #s-lg-public-skiplink {font-size:12px} 
 
+/************************/
+/* Guide Homepage */
+/***********************/
+
+#s-lg-index-list .alert {display:none;}
+
 /****************************/
-/***** Lib Guide Header *****/
+/***** Guide Header *****/
 /****************************/
 
 /***** Guide Title *****/
