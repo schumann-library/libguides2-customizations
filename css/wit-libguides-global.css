@@ -151,10 +151,9 @@ box-shadow: 0 7px 23px -6px #AAA;
 }
 
 #my_footer { background: #444; }
-#my_contact {color:#FFF;padding:10px 0px;}
 .my_footer_links li, .my_footer_links a{color:#FFBE3F;}
-.my_footer_links {color:#FFF}
-
+#my_footer h4, #my_footer address{color:#FFF;}
+#social_media a {text-decoration:none;}
 
 
 </style>
