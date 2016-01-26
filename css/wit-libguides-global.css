@@ -155,5 +155,8 @@ box-shadow: 0 7px 23px -6px #AAA;
 #my_footer h4, #my_footer address{color:#FFF;}
 #social_media a {text-decoration:none;}
 
+#s-lib-footer-brand, #s-lib-footer-rights,#s-lib-footer-support-link  {display:none;}
+#s-lib-footer-login-link{display:block;text-align:right;}
+.s-lib-footer {border:0;background:#e9eaed;}
 
 </style>
