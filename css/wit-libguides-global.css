@@ -142,13 +142,6 @@ box-shadow: 0 7px 23px -6px #AAA;
 /***** Footer *****/
 /******************/
 
-/*override default footer max width */
-
-#s-lib-footer-public.container {
- 
-  max-width: inherit;
-  width: inherit;
-}
 
 #my_footer { background: #444; }
 .my_footer_links li, .my_footer_links a{color:#FFBE3F;}
