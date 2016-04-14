@@ -23,6 +23,8 @@ a:focus, a:hover {
 
 a {color: #a94442}
 
+ol, ul {margin-bottom:2em;}
+
 .s-lib-side-borders {
     padding-left:15px;
     padding-right:15px;
