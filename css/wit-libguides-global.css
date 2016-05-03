@@ -10,11 +10,11 @@ It is included on every page.
 /*****************************/
 
 body {
-   background:#e9eaed;
+   /*background:#e9eaed; */
    color:#555;
    padding-left:0px;
    padding-right:0px;
-   font-size:16px;
+   font-size:1.6em;
    }
 
 a:focus, a:hover {
@@ -34,13 +34,8 @@ ol, ul {margin-bottom:2em;}
 /***** Custom Header *****/
 /*************************/
 
-#my_header {
-   background: #444;
-  
-   }
-   
-#institutional_banner {color:#777; padding-top: 10px; padding-bottom:10px;}
-#library_logo {color:#FFBE3F; margin-left:10px;font-family: georgia, serif;}
+
+#my_header {padding: 1.5em 0}
 
 /* this is for screen readers. it needs to be font size 12 or you can see it in a regular browser */
 #s-lg-public-skiplink {font-size:12px} 
