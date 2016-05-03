@@ -1,27 +1,84 @@
-<!--- BETA ALERT HEADER -->
+<!DOCTYPE html>
+<html>
 
-<style>
-#beta_alert_header { background:#E05D00; color:#FFF;}
-#beta_alert_header a {color:#FFF; text-decoration:underline;}
+<head>
 
-</style>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/global-header.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-<div id="beta_alert_header">
-<div class="container">
-  <p class="text-center">These are our <strong>new</strong> Research Guides. <a href="http://wit.v1.libguides.com">Take me to the old guides.</a>
-<!-- <a href="#">Tell us what you think about it.</a> --></p>
-  
+<body>
+
+
+  <!-- this is the libguides global header -->
+
+  <div id="my_header" class="">
+
+
+    <nav class="navbar navbar-default">
+
+      <div>
+        <!-- logo and toggle get grouped for better mobile display -->
+        <div>
+          <button type="button" id="my_navbar_toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span>menu</span>
+          </button>
+          <div id="my_library_logo">
+            <a class="navbar-brand" href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/libapps/accounts/44017/images/ddslibrarylogo.color.blacktype-530x55.png" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="my_navbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Find<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Books and More</a></li>
+                <li><a href="#">Databases</a></li>
+                <li><a href="#">Journals</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Borrow & Request</a></li>
+                <li><a href="#">Course Reserves</a></li>
+                <li><a href="#">For Faculty</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Help<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Borrow & Request</a></li>
+                <li><a href="#">Course Reserves</a></li>
+                <li><a href="#">For Faculty</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Borrow & Request</a></li>
+                <li><a href="#">Course Reserves</a></li>
+                <li><a href="#">For Faculty</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- END: #my_navbar -->
+
+      </div>
+    </nav>
   </div>
-  
-</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<!-- END BETA ALERT HEADER -->
 
-<!-- this is the libguides global header -->
 
-<div id="my_header"> 
-    <div id="institutional_banner" class="container">
-        
-            <a class="h3" id="library_logo" href="http://wit.edu/library"><img src="https://s3.amazonaws.com/libapps/accounts/44017/images/ddslibrarylogo.color.blacktype-530x55.png" alt="Library Logo"/></a>
-       </div>
-    </div>
+
+</body>
+
+</html>
