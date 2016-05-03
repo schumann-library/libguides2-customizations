@@ -36,6 +36,7 @@ ol, ul {margin-bottom:2em;}
 
 
 #my_header {padding: 1.5em 0}
+#my_header img {max-width:100%;}
 
 /* this is for screen readers. it needs to be font size 12 or you can see it in a regular browser */
 #s-lg-public-skiplink {font-size:12px} 
