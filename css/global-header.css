@@ -24,13 +24,21 @@
 #my_library_logo {overflow:hidden; margin-right:5%;}
 #my_navbar {clear:both;}
 
-
-
   /**************************/
  /** Bootstrap overrides ***/
 /*************************/
 
 .navbar-brand {height:100%;}
+
+
+
+
+@media (max-width: 767px) {
+.navbar-nav .open .dropdown-menu {border-bottom: 2px solid #eee ;}
+.navbar-nav .open:last-child .dropdown-menu {border-bottom: 0;}
+
+
+}
 
 
 
