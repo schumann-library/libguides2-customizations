@@ -13,7 +13,7 @@
 /***************************/
 
 /*Move skip link further off the page to allow for larger base font-size */ 
-#s-lg-public-skiplink {top:-90;} 
+#s-lg-public-skiplink {top:-90px;} 
 
 /*************************/
 /***** Custom Header *****/
@@ -28,15 +28,15 @@
  /** Bootstrap overrides ***/
 /*************************/
 
-.navbar-brand {height:100%;}
-.navbar-default .navbar-nav>li>a {
+#global_header .navbar-brand {height:100%;}
+#global_header .navbar-default .navbar-nav>li>a {
     color: #777;
     font-size: 20px;
     font-weight: bold;
     padding-right:15px;
     
 }
-.navbar {
+#global-header .navbar {
     border-radius: 0;
 }
 
