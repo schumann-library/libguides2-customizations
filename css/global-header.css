@@ -28,15 +28,15 @@
  /** Bootstrap overrides ***/
 /*************************/
 
-.navbar-brand {height:100%;}
-.navbar-default .navbar-nav>li>a {
+#global-header .navbar-brand {height:100%;}
+#global-header .navbar-default .navbar-nav>li>a {
     color: #777;
-    /*font-size: 20px;
-    font-weight: bold;*/
+    font-size: 20px;
+    font-weight: bold;
     padding-right:15px;
     
 }
-.navbar {
+#global-header .navbar {
     border-radius: 0;
 }
 
