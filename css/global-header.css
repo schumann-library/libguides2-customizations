@@ -13,7 +13,7 @@
 /***************************/
 
 /*Move skip link further off the page to allow for larger base font-size */ 
-#s-lg-public-skiplink {top:-90;} 
+#s-lg-public-skiplink {top:-90px;} 
 
 /*************************/
 /***** Custom Header *****/
