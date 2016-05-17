@@ -29,12 +29,21 @@
 /*************************/
 
 .navbar-brand {height:100%;}
-
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right:15px;
+    
+}
+.navbar {
+    border-radius: 0;
+}
 
 
 
 @media (max-width: 767px) {
-.navbar-nav .open .dropdown-menu {border-bottom: 2px solid #eee ;}
+.navbar-nav .open .dropdown-menu {border-bottom: 2px solid #eee ;background-color:#fafafa;}
 .navbar-nav .open:last-child .dropdown-menu {border-bottom: 0;}
 
 
