@@ -1,12 +1,3 @@
-/*******************************/
-/*********global-header.css *****/
-/*******************************/
-
-
-#beta_alert_header { background:#E05D00; color:#FFF;margin-bottom: 1.5em;}
-#beta_alert_header a {color:#FFF; text-decoration:underline;}
-
-
 
 /***************************/
 /**********skip link********/
@@ -21,13 +12,13 @@
 
 
 
-#my_library_logo {overflow:hidden; margin-right:5%;}
+#my_library_logo {overflow:hidden; margin-right:5%; }
 #my_navbar {clear:both;}
 
   /**************************/
  /** Bootstrap overrides ***/
 /*************************/
-
+#global_header .navbar {border-radius: 0;}
 #global_header .navbar-brand {height:100%;}
 #global_header .navbar-default .navbar-nav>li>a {
     color: #777;
@@ -36,9 +27,7 @@
     padding-right:15px;
     
 }
-#global-header .navbar {
-    border-radius: 0;
-}
+#global_header .dropdown-menu > li > a {font-size:18px; line-height: 2}
 
 
 
