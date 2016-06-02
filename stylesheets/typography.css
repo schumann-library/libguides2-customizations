@@ -21,9 +21,10 @@ h1, h2, h3, h4, h5, h6{font-family: 'Open Sans', sans-serif;}
 .s-lib-box .s-lib-box-title {font-size:24px; color:#a94442;}
 
 /*Box Content */
-.s-lib-box-content {
+.s-lib-box-content p {
 font-family: 'Noto Serif', serif; 
 font-size:18px; 
 line-height:30px;
+margin-bottom: 24px;
 }
 
