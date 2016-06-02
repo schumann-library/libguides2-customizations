@@ -1,7 +1,19 @@
 Body {font-size:14px; font-family: 'Open Sans', sans-serif;}
 h1, h2, h3, h4, h5, h6{font-family: 'Open Sans', sans-serif;}
 
+#s-lg-guide-header-info h1, .s-lib-header h1  {
+    font-size:45px; 
+    font-weight: bold;
+    text-transform:uppercase;
+    margin-bottom: 45px;
+    
+}
 
+#s-lib-bc li {
+    font-family: 'Noto Serif', serif; 
+    font-weight: normal;
+    font-size: 12px;
+}
 
 /*** in libguides boxes ***/
 
