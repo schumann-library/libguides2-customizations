@@ -1,0 +1,11 @@
+/****************************
+***   content-boxes.css   ***
+***                       ***
+****************************/
+
+
+.s-lg-col-boxes .s-lib-box {border:0; box-shadow:0 0 0 0;}
+
+@media (min-width: 992px){
+#s-lg-col-1 .s-lg-col-boxes {margin-left:30px;}
+}
