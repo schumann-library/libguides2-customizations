@@ -26,6 +26,12 @@
     margin-right: -11px;
 }
 
+#s-lg-tabs-container .s-lg-subtab-ul.nav.nav-pills.nav-stacked > .active > a {   
+    margin-left: -30px;
+    margin-right: -21px;
+    
+}
+
 #s-lg-tabs-container .nav-pills > .active > a::before {
     display: block;
     width: 10px;
