@@ -1,0 +1,87 @@
+/*********************************
+***   styles for guide menu    ***
+***                            ***
+*********************************/
+
+#s-lg-guide-tabs {
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+}
+
+.s-lg-tabs-side .nav {
+    margin: 10px;
+}
+
+
+/*current page - menu item */
+
+#s-lg-tabs-container .nav-pills > .active > a {
+    color: #fff;
+    cursor: default;
+    background-color: #C9252B;
+    border: 0;
+    border-radius: 0;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-right: -11px;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a::before {
+    display: block;
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    bottom: -10px;
+    left: -0px;
+    content: "";
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #a94442;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a:hover {
+    border: 0;
+    border-radius: 0;
+    background-color: #C9252B;
+    text-decoration: none;
+}
+
+
+/*other pages - menu items */
+
+#s-lg-tabs-container .nav-pills > li > a {
+    border: 0;
+    border-radius: 0;
+    color: #777;
+    font-weight: normal;
+    padding: 4px 15px;
+    background-color: #f8f8f8
+}
+
+#s-lg-tabs-container .nav-pills > li > a:hover {
+    border: 0;
+    border-radius: 0;
+    color: #777;
+    background-color: #f8f8f8;
+    text-decoration: underline;
+}
+
+
+/*box-level navigation */
+
+.s-lg-tabs-side .s-lg-boxnav {
+    border-left: 1px solid #e7e7e7;
+}
+
+.s-lg-tabs-side .s-lg-boxnav .list-group-item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 0;
+}
+
+.s-lg-tabs-side .s-lg-boxnav .list-group-item a {
+    color: #555;
+}
