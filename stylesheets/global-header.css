@@ -30,7 +30,7 @@
 
 
 #my_library_hours{font-weight: bold;margin:0 0 15px 15px;}
-#hours_today{color:#ff0047;}
+#hours_link,#my_library_hours{color:#ff0047;}
 #my_library_logo {margin:15px;}
 #my_navbar {clear: none}
 
