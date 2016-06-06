@@ -11,14 +11,33 @@
 /*************************/
 
 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items:flex-end; 
+    flex-wrap:wrap;
+     justify-content: center
+}
 
-#my_library_logo {overflow:hidden; margin-right:5%; }
-#my_navbar {clear:both;}
+.flex-item {
+    width: auto;
+    height:auto;
+    
+    
+}
+
+
+#my_library_hours{font-weight: bold;margin:0 0 15px 15px;}
+#my_library_logo {margin:15px;}
+#my_navbar {clear: none}
 
   /**************************/
  /** Bootstrap overrides ***/
 /*************************/
-#global_header .navbar {border-radius: 0;}
+
+/*#global_header .navbar {border-radius: 0;}
 #global_header .navbar-brand {height:100%;}
 #global_header .navbar-default .navbar-nav>li>a {
     color: #777;
@@ -26,12 +45,12 @@
     font-weight: bold;
     padding-right:15px;
     
-}
-#global_header .dropdown-menu > li > a {font-size:18px; line-height: 2}
+}*/
+/*#global_header .dropdown-menu > li > a {font-size:18px; line-height: 2} */
 
 
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 .navbar-nav .open .dropdown-menu {border-bottom: 2px solid #eee ;background-color:#fafafa;}
 .navbar-nav .open:last-child .dropdown-menu {border-bottom: 0;}
 
@@ -39,3 +58,4 @@
 }
 
 
+*/
