@@ -15,116 +15,71 @@
 
   <!-- this is the libguides global header -->
 
-  <div id="global_header" class="">
+  <div id="global_header" class="container-fluid">
     
-         
-            
-             
-          </div>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-        <div >
+    <nav class="row navbar navbar-default">
+      <div class="container">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         
-           <div class="flex-container">
-             
-              <div class="flex-item" id="my_library_logo">
+          
+          <div class="flex-container">
+            <div class="flex-item" id="my_library_logo">
               <a href="http://library.wit.edu">
                 <img class="img-responsive" src="https://s3.amazonaws.com/libapps/accounts/44017/images/ddslibrarylogo.color.blacktype-530x55.png" alt="Douglas D. Schumann Library & Learning Commons">
               </a>
-              </div>
-              <div class="flex-item" id="my_library_hours">
+            </div>
+            <div class="flex-item" id="my_library_hours">
               <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 
-              
-             
-
-<span class="hours-today" id="hours_today"><a href="http://wit.edu/library/about/hours.html" id="hours_link">Library Hours</a></span>
-
-
-              
-              
-              </div>
+              <span class="hours-today" id="hours_today"><a href="http://wit.edu/library/about/hours.html" id="hours_link">Today's hours</a></span>
+            </div>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Search & Find</a></li>
+                  <li><a href="#">Research Help</a></li>
+                  <li><a href="#">More...</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services & Facilities<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Borrow & Request</a></li>
+                  <li><a href="#">Course Reserves</a></li>
+                  <li><a href="#">For Faculty</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Help<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Borrow & Request</a></li>
+                  <li><a href="#">Course Reserves</a></li>
+                  <li><a href="#">For Faculty</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Partner with the library</a></li>
+                  <li><a href="#">For Faculty</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- END: #my_navbar -->
         </div>
-        
-    
-      <div class="collapse navbar-collapse" id="my_navbar">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Search & Find</a></li>
-              <li><a href="#">Research Help</a></li>
-              <li><a href="#">More...</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services & Facilities<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Borrow & Request</a></li>
-              <li><a href="#">Course Reserves</a></li>
-              <li><a href="#">For Faculty</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Help<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Borrow & Request</a></li>
-              <li><a href="#">Course Reserves</a></li>
-              <li><a href="#">For Faculty</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Partner with the library</a></li>
-              <li><a href="#">For Faculty</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!-- END: #my_navbar -->
-   
-  </div>
-   </nav>
+     </nav>
+    </div> <!-- END: #global_header -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  
-   <script type="text/javascript">// <![CDATA[
-                $(document).ready(function() {
-                //callback parameter is not in libcal documentation but it is necessary
-                var libcalHours = "https://api3.libcal.com/api_hours_today.php?iid=1176&lid=0&format=json&callback=?";
-                $.getJSON(libcalHours, function(data){
-                    
-                     //display whether we are currently open or closed
-                        $.each(data.locations, function(i,hours){
-                           if(hours.times.currently_open) {
-                            $("#currently-open").append("Currently: OPEN");
-                        } else if (!hours.times.currently_open) {
-                            $("#currently-open").append("Currently: CLOSED");
-                        } else { 
-                            $("#currently-open").empty();
-                        } 
-                         
-                        
-                        //display the Library's Hours
-                        $("#hours_link").html("Today's hours: "+hours.rendered);
-       
-                        //overwrite link to hours page with the URL in libcal. 
-                          $("#hours_link").attr("href",hours.url);
-    
-                        });
-  });
-});
-// ]]></script>
-  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+  <script src="../javascripts/get-hours.js"></script>
 
 
 

@@ -17,6 +17,14 @@
     align-items:center;
     
 }
+@media (max-width: 991px){
+.flex-container {
+    justify-content:center;}
+
+#my_navbar{text-align: center;}
+}
+
+
 
 #my_library_hours{font-weight: bold;padding:0 0 5px 15px;}
 #hours_link,#my_library_hours{color:#ff0047;}
