@@ -12,27 +12,16 @@
 
 
 .flex-container {
-    display: -webkit-flex;
     display: flex;
-    width: auto;
-    height: auto;
-    align-items:flex-end; 
     flex-wrap:wrap;
-     justify-content: center
-}
-
-.flex-item {
-    width: auto;
-    height:auto;
-    
+    align-items:center;
     
 }
 
-
-#my_library_hours{font-weight: bold;margin:0 0 15px 15px;}
+#my_library_hours{font-weight: bold;padding:0 0 5px 15px;}
 #hours_link,#my_library_hours{color:#ff0047;}
-#my_library_logo {margin:15px;}
-#my_navbar {clear: none}
+#my_library_logo {margin: 15px;}
+
 
   /**************************/
  /** Bootstrap overrides ***/
