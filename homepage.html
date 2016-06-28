@@ -88,7 +88,7 @@
   <section id="search_blaster">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1">
       <form action="http://search.ebscohost.com/login.aspx" method="get" target="_blank">
         <input name="custid" type="hidden" value="s5071755"><input name="direct" type="hidden" value="true">
         <input name="scope" type="hidden" value="site"> <input name="site" type="hidden" value="eds-live">
@@ -102,18 +102,18 @@
         <input name="cli1" type="hidden" value="RV">
         
         <!-- Search box and Submit button -->
-        <div id="" class="input-group">
-          <input type="text" class="form-control" name="bquery" placeholder="I want to find...">
+        <div id="search_blaster_input" class="input-group">
+          <input type="text" class="form-control input-lg" name="bquery" placeholder="I want to find..." required>
           
           <span class="input-group-btn">
-            <button title="show search options" class="btn btn-default" data-toggle="collapse" type="button" href="#search_options" >options
+            <button title="show search options" class="btn btn-default input-lg" data-toggle="collapse" type="button" href="#search_options" >options
           </button>
 
           
-          <button id="" class="btn btn-primary" type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          <button id="" class="btn btn-primary input-lg" type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span></button>
           </span>      
         </div>
-        <div class="collapse" id="search_options" class="bg-info" >
+        <div class="collapse" id="search_options" class="bg-info">
           <div class="form-group">
             <label for="limit_to">Limit your search to...</label>
             <div class="checkbox">
@@ -135,6 +135,8 @@
       </div>
     </div>
   </section>
+  <!-- END: #search_blaster -->
+  
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
