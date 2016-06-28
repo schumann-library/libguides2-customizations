@@ -1,0 +1,22 @@
+  #search_blaster_query { display: flex; flex-wrap:nowrap; }
+   
+   #search_blaster_text {
+         flex-grow: 1;
+         padding:5px;
+         font-size:2em;
+         overflow-x: hidden;
+         border-radius:4px 0px 0px 4px;
+         border:2px solid #555;
+       
+   }
+    #search_blaster_button {margin:auto;
+         font-size:1.5em;
+         line-height:2.5em;
+         width:75px;
+         border:0;
+         text-transform: uppercase; 
+         border-radius: 0px 4px 4px 0px;
+         
+     
+    }
+    #search_options {margin-top:-3px;padding:10px;border-radius:0px 0px 4px 4px; border: 1px solid #ccc;}
