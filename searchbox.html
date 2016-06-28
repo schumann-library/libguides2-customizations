@@ -1,0 +1,32 @@
+<style>
+
+
+   #search_blaster_form { display: flex; flex-wrap:wrap; }
+   
+   #search_blaster_text {
+         flex-grow: 1;
+       
+   }
+    #search_blaster_button {margin:auto;}
+
+ 
+</style>
+
+<form  id="search_blaster_form" action="http://search.ebscohost.com/login.aspx" method="get" target="_blank">
+    <input name="custid" type="hidden" value="s5071755"><input name="direct" type="hidden" value="true">
+    <input name="scope" type="hidden" value="site"> <input name="site" type="hidden" value="eds-live">
+    <input name="profid" type="hidden" value="eds">
+    <!-- Authentication type -->
+    <input name="authtype" type="hidden" value="ip,guest">
+    <!-- Limiter: Full Text -->
+    <input name="cli0" type="hidden" value="FT">
+    <input name="clv0" type="hidden" value="N">
+    <!-- Limiter: Scholarly/Peer-Reviewed -->
+    <input name="cli1" type="hidden" value="RV">
+    <input name="clv1" type="hidden" value="N">
+    <!-- Search box and Submit button -->
+    <input id="search_blaster_text" name="bquery" size="" placeholder="I want to find...">
+    <button  id="search_blaster_button" type="submit" value="Search" >search</button>
+    
+    
+    </form>
