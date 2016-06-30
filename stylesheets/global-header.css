@@ -17,10 +17,12 @@
 /*************************/
 
 
-/***** Custom Header *****/
+/***** Global Header *****/
 
 
 /*************************/
+
+#global_header {margin: 0 -15px;}
 
 #header_flex_container {
     display: flex;
