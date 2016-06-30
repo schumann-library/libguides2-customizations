@@ -113,7 +113,8 @@
 
 
 
-  <section id="search_blaster">
+ <!-- BEGIN: SEARCH BLASTER -->
+<section id="search_blaster">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -136,15 +137,8 @@
               <input type="text" class="form-control" id="search_blaster_query" name="bquery" placeholder="I want to find..." required>
 
               <span class="input-group-btn">
-                <button title="search options" class="btn btn-default " data-toggle="collapse" type="button" href="#search_options" ><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-              </button>
-
-
-              <button title="search" class="btn btn-primary " type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-              </button>
-              </span>
-            </div>
-            <div class="collapse bg-info" id="search_options">
+                <ul class="dropdown-menu bg-info dropdown-menu-right keep-open-on-click" id="search_options">
+              <li>
               <div class="form-group">
                 <label for="limit_to">Search Options</label>
                 <div class="checkbox">
@@ -179,14 +173,31 @@
                     </label>
                 </div>
               </div>
+              </li>
+            </ul>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Options <span class="caret"></span>
+  </button>
+  
+
+
+
+              <button title="search" class="btn btn-primary " type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
+              </span>
             </div>
+            
           </form>
         </div>
       </div>
     </div>
   </section>
+<script>
+    $(document).on('click', '.dropdown-menu', function(e) {
+    if ($(this).hasClass('keep-open-on-click')) { e.stopPropagation(); }
+});
+  </script>
   <!-- END: #search_blaster -->
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -206,7 +217,7 @@
     });
   </script>
 
-
+ 
 </body>
 
 </html>
