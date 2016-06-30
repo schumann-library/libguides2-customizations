@@ -1,24 +1,137 @@
-
 /***************************/
+
+
 /**********skip link********/
+
+
 /***************************/
 
-/*Move skip link further off the page to allow for larger base font-size */ 
-#s-lg-public-skiplink {top:-90px;} 
+
+/*Move skip link further off the page to allow for larger base font-size */
+
+#s-lg-public-skiplink {
+    top: -90px;
+}
+
 
 /*************************/
+
+
 /***** Custom Header *****/
+
+
 /*************************/
 
+#header_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#main_menu {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    background: #555;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#main_menu .dropdown-toggle {
+    text-decoration: none;
+    display: block;
+    padding: .5em 1em;
+    color: #eee;
+    font-size:1.25em;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .0714em;
+}    
+
+#main_menu .open .dropdown-toggle {
+    background: #ffd600;
+    color: #000;
+}
+
+#main_menu .dropdown-menu {
+    margin-top: 0;
+    border-radius: 0;
+
+}
+
+#main_menu .dropdown-menu a {
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+}
+
+@media all and (max-width: 991px) {
+    #header_flex_container {
+        flex-direction: column;
+    }
+    #main_menu {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #main_menu {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    #main_menu li:last-of-type a {
+        border-bottom: none;
+    }
+    #main_menu .open .dropdown-menu {
+        position: static;
+        float: none;
+        border: 0;
+        box-shadow: 0 0 0 0;
+        background-color: #fff;
+    }
+    #main_menu .open .dropdown-menu a {
+        display: block;
+    }
+}
+
+#my_library_hours {
+    font-weight: bold;
+    padding: 0 0 5px 15px;
+}
+
+#hours_link,
+#my_library_hours {
+    color: #c9252b;
+}
+
+#my_library_logo {
+    margin: 15px;
+}
 
 
-#my_library_logo {overflow:hidden; margin-right:5%; }
-#my_navbar {clear:both;}
 
-  /**************************/
- /** Bootstrap overrides ***/
+
+/**************************/
+
+
+/** Bootstrap overrides ***/
+
+
 /*************************/
-#global_header .navbar {border-radius: 0;}
+
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+/*#global_header .navbar {border-radius: 0;}
 #global_header .navbar-brand {height:100%;}
 #global_header .navbar-default .navbar-nav>li>a {
     color: #777;
@@ -26,12 +139,13 @@
     font-weight: bold;
     padding-right:15px;
     
-}
-#global_header .dropdown-menu > li > a {font-size:18px; line-height: 2}
+}*/
 
 
+/*#global_header .dropdown-menu > li > a {font-size:18px; line-height: 2} */
 
-@media (max-width: 767px) {
+
+/*@media (max-width: 767px) {
 .navbar-nav .open .dropdown-menu {border-bottom: 2px solid #eee ;background-color:#fafafa;}
 .navbar-nav .open:last-child .dropdown-menu {border-bottom: 0;}
 
@@ -39,3 +153,4 @@
 }
 
 
+*/

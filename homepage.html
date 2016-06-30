@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/global-header.css">
+  <link rel="stylesheet" href="stylesheets/searchblaster.css">
+  <link rel="stylesheet" href="stylesheets/typography.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+  <!-- this is the libguides global header -->
+
+  <div id="global_header" class="container-fluid">
+
+    <nav class="row navbar navbar-default">
+      <div class="">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        <div id="header_flex_container">
+          <div id="my_library_logo">
+            <a href="http://library.wit.edu">
+              <img class="img-responsive" src="https://s3.amazonaws.com/libapps/accounts/44017/images/ddslibrarylogo.color.blacktype-530x55.png" alt="Douglas D. Schumann Library & Learning Commons">
+            </a>
+          </div>
+          <div class="flex-item" id="my_library_hours">
+            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+            <span class="hours-today" id="hours_today"><a href="http://wit.edu/library/about/hours.html" id="hours_link">Today's hours</a></span>
+          </div>
+        </div>
+        <!-- END: .flex-container -->
+
+        <div class="collapse navbar-collapse" id="my_navbar">
+          <ul id="main_menu">
+            <li role="presentation" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Search & Find</a></li>
+                <li><a href="#">Research Help</a></li>
+                <li><a href="#">More...</a></li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Services & Spaces<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Borrowing</a></li>
+                <li><a href="#">Course Reserves</a></li>
+                <li><a href="#">Reserve a Study Room</a></li>
+                <li><a href="#">Technology Sandbox</a></a>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Help<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Tech Support</a></li>
+                <li><a href="#">Research Help</a></li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <div id="libwizard_get_help_form_container" class="container-fluid">
+                    <p class="h4">Contact the Library</p>
+                    <div id="form_4b34e5d1a7f40fbd114cc7f8dfc8a0ee"></div>
+                    <script type="text/javascript" src="//wit.libsurveys.com/form_loader.php?id=4b34e5d1a7f40fbd114cc7f8dfc8a0ee"></script>
+                  </div>
+                  <!-- <div id="get_help_form_container" class="container-fluid">
+                    <form>
+                      <p class="h3" style="min-width:220px">Contact the Library</p>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">How can we help you?</label>
+                        <textarea rows="4" cols="100" class="form-control" id="exampleInputext1" placeholder="I need help with..."></textarea>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </form>
+                  </div> -->
+                </li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Search & Find</a></li>
+                <li><a href="#">Research Help</a></li>
+                <li><a href="#">More...</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+        <!-- END: #my_navbar -->
+
+      </div>
+    </nav>
+  </div>
+  <!-- END: #global_header -->
+
+
+
+  <section id="search_blaster">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <form id="search_blaster_form" action="http://search.ebscohost.com/login.aspx" method="get">
+            <input name="custid" type="hidden" value="s5071755"><input name="direct" type="hidden" value="true">
+            <input name="scope" type="hidden" value="site"> <input name="site" type="hidden" value="eds-live">
+            <input name="profid" type="hidden" value="eds">
+            <input name="groupid" type="hidden" value="main">
+            <!-- Authentication type -->
+            <input name="authtype" type="hidden" value="ip,guest">
+            <!-- Limiter: Full Text and catalog by default-->
+            <input name="cli0" type="hidden" value="FT1">
+            <input name="clv0" type="hidden" value="Y">
+
+
+            <!-- Search box and Submit button -->
+            <div id="search_blaster_input" class="input-group input-group-lg">
+
+
+              <input type="text" class="form-control" id="search_blaster_query" name="bquery" placeholder="I want to find..." required>
+
+              <span class="input-group-btn">
+                <button title="search options" class="btn btn-default " data-toggle="collapse" type="button" href="#search_options" ><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </button>
+
+
+              <button title="search" class="btn btn-primary " type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+              </button>
+              </span>
+            </div>
+            <div class="collapse bg-info" id="search_options">
+              <div class="form-group">
+                <label for="limit_to">Search Options</label>
+                <div class="checkbox">
+                  <label>
+                    <!-- Limiter: Scholarly/Peer-Reviewed -->
+                    <input name="cli1" type="hidden" value="RV">
+                    <input type="checkbox" name="clv1" value="Y">
+                    Peer-reviewed content only
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <!-- limiter: remove full text and catalog  limit (include ill)-->
+                    <input type="checkbox" name="clv0" value="N">
+                    Add results beyond Schumann Library's collection
+                  </label>
+                </div>
+              </div>
+              <div class="form-group" id="publication_type_limits">
+                <label for="publication_type_limits">Limit by publication type</label>
+                <div class="checkbox">
+                  <label>
+                      
+                      <input type="checkbox" value="PT Book  FC Y  FT1 N">
+                      Print Books 
+                    </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                      <input type="checkbox" value="PT periodical">
+                      Magazine / Journal articles
+                    </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: #search_blaster -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="javascripts/get-hours.js"></script>
+  <script>
+    $("#search_blaster_form").submit(function() {
+      // Let's find the input to check
+      $checks = $(":checkbox");
+      var string = $checks.filter("#publication_type_limits input:checkbox:checked").map(function() {
+        return this.value;
+      }).get().join(" OR ");
+      $('#search_blaster_query').val(function(index, value) {
+        return value + " " + string + "";
+      });
+
+
+    });
+  </script>
+
+
+</body>
+
+</html>
