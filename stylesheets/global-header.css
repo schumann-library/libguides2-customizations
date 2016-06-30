@@ -32,7 +32,7 @@
     list-style: none;
     margin: 0;
     padding:0;
-    background: #ff0074;
+    background: #555;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -40,19 +40,22 @@
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: flex-start;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #main_menu .dropdown-toggle {
     text-decoration: none;
     display: block;
-    padding: 1em;
-    color: #FFF;
+    padding: .5em 1em;
+    color: #eee;
+    font-size:1.25em;
     text-transform: uppercase;
-    font-weight: bold;
-}
+    font-weight: normal;
+    letter-spacing: .0714em;
+}    
 
 #main_menu .open .dropdown-toggle {
-    background: yellow;
+    background: #ffd600;
     color: #000;
 }
 
@@ -60,6 +63,11 @@
     margin-top: 0;
     border-radius: 0;
 
+}
+
+#main_menu .dropdown-menu a {
+    text-transform: uppercase;
+    padding: .5em 1.5em;
 }
 
 @media all and (max-width: 991px) {
@@ -83,10 +91,9 @@
     #main_menu .open .dropdown-menu {
         position: static;
         float: none;
-        background: transparent;
         border: 0;
-        border-bottom: 1px solid #dd0047;
         box-shadow: 0 0 0 0;
+        background-color: #fff;
     }
     #main_menu .open .dropdown-menu a {
         display: block;
@@ -100,7 +107,7 @@
 
 #hours_link,
 #my_library_hours {
-    color: #ff0047;
+    color: #c9252b;
 }
 
 #my_library_logo {
