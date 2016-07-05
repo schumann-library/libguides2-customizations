@@ -1,7 +1,7 @@
 Body {font-size:14px; font-family: 'Open Sans', sans-serif;}
 h1, h2, h3, h4, h5, h6{font-family: 'Open Sans', sans-serif;}
 
-.lede {text-align:justify;}
+
 .lede:first-line {font-weight:bold;text-align:justify;text-transform:uppercase;
     position:relative;
     font-size:0.95em;
@@ -39,5 +39,6 @@ font-family: 'Noto Serif', serif;
 font-size:18px; 
 line-height:30px;
 margin-bottom: 24px;
+text-align:justify;
 }
 
