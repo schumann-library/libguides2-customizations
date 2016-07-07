@@ -22,7 +22,7 @@
 
 /*************************/
 
-#global_header {margin: 0 -15px;}
+
 
 #header_flex_container {
     display: flex;
@@ -90,6 +90,8 @@
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         padding: 0;
+        margin-right: -15px;
+        margin-left: -15px;
     }
     #main_menu li:last-of-type a {
         border-bottom: none;

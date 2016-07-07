@@ -92,3 +92,34 @@
 .s-lg-tabs-side .s-lg-boxnav .list-group-item a {
     color: #555;
 }
+
+
+
+/* styles for landing page menu */
+/* we add .landing-page to the nav container via javascript so we can style the menu differently on the landing pages*/
+
+.landing-page .active span {
+    font-size: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.landing-page #s-lg-tabs-container .nav-pills > .active > a::before {
+    display: block;
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    bottom: -20px;
+    left: -0px;
+    content: "";
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #a94442;
+}
+
+.landing-page #s-lg-tabs-container .nav-pills > .active > a {
+    margin-left: -30px;
+    padding-left: 34px;
+    margin-right: -11px;
+
+}
+
