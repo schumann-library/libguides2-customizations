@@ -71,6 +71,11 @@
 
 }
 
+#main_menu .dropdown-menu>li>a:focus, #main_menu .dropdown-menu>li>a:hover {
+    background: #ffd600;
+    color: #000;
+}
+
 #main_menu .dropdown-menu a {
     text-transform: uppercase;
     padding: .5em 1.5em;

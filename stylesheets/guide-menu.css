@@ -16,9 +16,9 @@
 /*current page - menu item */
 
 #s-lg-tabs-container .nav-pills > .active > a {
-    color: #fff;
+    color: #333;
     cursor: default;
-    background-color: #C9252B;
+    background-color: #ffd600;
     border: 0;
     border-radius: 0;
     font-weight: bold;
@@ -42,13 +42,13 @@
     left: -0px;
     content: "";
     border-bottom: 10px solid transparent;
-    border-right: 10px solid #a94442;
+    border-right: 10px solid #d6b300;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
     border: 0;
     border-radius: 0;
-    background-color: #C9252B;
+    background-color: #ffd600;
     text-decoration: none;
 }
 
