@@ -46,6 +46,7 @@
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
+    color: #333;
     border: 0;
     border-radius: 0;
     background-color: #ffd600;
