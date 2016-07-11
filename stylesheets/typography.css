@@ -53,8 +53,9 @@ h6 {
 
 .s-lib-box .s-lib-box-title {
     font-size: 26px;
-    color: #a94442;
+    color: #777;
     text-transform:uppercase;
+    font-weight:normal;
 }
 
 
