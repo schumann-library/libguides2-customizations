@@ -146,6 +146,11 @@
     padding-left: 0px;
 }
 
+.img-responsive { 
+    
+    width:100%;
+}
+
 
 /*#global_header .navbar {border-radius: 0;}
 #global_header .navbar-brand {height:100%;}
