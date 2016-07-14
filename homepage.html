@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="stylesheets/searchblaster.css">
   <link rel="stylesheet" href="stylesheets/typography.css">
   <link rel="stylesheet" href="stylesheets/footer.css">
+  <link rel="stylesheet" href="stylesheets/instagram.css">
 
 
 
@@ -198,6 +199,10 @@
   
   </div>
   
+  <!-- BEGIN: #spectragram -->
+  <div id="instagram_grid"></div>
+  
+ 
   
   <!-- BEGIN: #my_footer -->
   <div id="my_footer" class="container-fluid">
@@ -292,7 +297,22 @@
   <!-- EDS search form functionality -->
   <!-- include in libguides homepage template -->
   <script src="javascripts/searchblaster.js"></script>
+    
+  <script type="text/javascript" src="javascripts/spectragram.js"></script>
+  <script type="text/javascript"> 
    
+  
+  
+     jQuery.fn.spectragram.accessData = {
+      accessToken: '2210002722.39911ff.2a5468465d274a8f833252cfe882a149',
+      clientID: '39911ffdc52e4874ad5264ac684f64b1'
+      };
+   
+  
+      $('#instagram_grid').spectragram('getSelfMedia',{size:'small',max:'3',wrapEachWith:'<div class="instagram"></div>'}); 
+      
+    
+</script>
 
 </body>
 
