@@ -53,6 +53,11 @@
     text-decoration: none;
 }
 
+/* sub pages */
+
+ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
+    margin-bottom: 10px;
+
 
 /*other pages - menu items */
 
