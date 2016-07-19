@@ -102,7 +102,7 @@
         border-bottom: none;
     }
     #main_menu .open .dropdown-menu {
-        position: static;
+        position: relative;
         float: none;
         border: 0;
         box-shadow: 0 0 0 0;
