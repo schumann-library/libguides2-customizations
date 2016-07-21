@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="stylesheets/footer.css">
   <link rel="stylesheet" href="stylesheets/instagram.css">
 
+<!--Scripts -->
+<!-- ALREADY INCLUDED IN LIBGUIDES 2. -->
+<!-- Included here for development environment only -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+
 
 
 </head>
@@ -41,7 +49,7 @@
 
         <div id="header_flex_container" class="container">
           <div id="my_library_logo">
-            <a href="http://library.wit.edu">
+            <a href="http://library.wit.edu/home">
               <img class="img-responsive" src="https://s3.amazonaws.com/libapps/accounts/44017/images/ddslibrarylogo.color.blacktype-530x55.png" alt="Douglas D. Schumann Library & Learning Commons">
             </a>
           </div>
@@ -107,6 +115,9 @@
       </div>
     </nav>
   </div>
+    <!-- get library hours from libcal -->
+ 
+  <script src="javascripts/get-hours.js"></script>
   <!-- END: #global_header -->
 
 <!-- this div is just for display purposes in development. Don't copy it. -->
@@ -195,6 +206,10 @@
       </div>
     </div>
   </section>
+  
+    <!-- EDS search form functionality -->
+  <!-- included with Seach Blaster widget in LibGuides -->
+  <script src="javascripts/searchblaster.js"></script>
 
   <!-- END: #search_blaster -->
   
@@ -202,6 +217,20 @@
   
   <!-- BEGIN: #spectragram -->
   <div id="instagram_grid"></div>
+  <script type="text/javascript" src="javascripts/spectragram.js"></script>
+  <script type="text/javascript"> 
+   //our details
+     jQuery.fn.spectragram.accessData = {
+      accessToken: '2210002722.39911ff.2a5468465d274a8f833252cfe882a149',
+      clientID: '39911ffdc52e4874ad5264ac684f64b1'
+      };
+   
+ 
+  //set options and call the spetragram function where we want it to go.
+      $('#instagram_grid').spectragram('getSelfMedia',{size:'small',max:'9',wrapEachWith:'<div class="instagram"></div>'}); 
+      
+    
+</script>
   
  
   
@@ -284,38 +313,12 @@
 </div>
 <!-- END: #my_footer -->
   
-  <!-- ALREADY INCLUDED IN LIBGUIDES 2. -->
-  <!-- Included here for development environment only -->
+  
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   
-  
-  <!-- CUSTOM SCRIPTS TO BE INCLUDED IN LIBGUIDES ->
-  
-  <!-- get library hours from libcal -->
-  <!-- include in libguides global footer -->
-  <script src="javascripts/get-hours.js"></script>
-  
-  <!-- EDS search form functionality -->
-  <!-- include in libguides homepage template -->
-  <script src="javascripts/searchblaster.js"></script>
+
     
-  <script type="text/javascript" src="javascripts/spectragram.js"></script>
-  <script type="text/javascript"> 
-   
-  
-  
-     jQuery.fn.spectragram.accessData = {
-      accessToken: '2210002722.39911ff.2a5468465d274a8f833252cfe882a149',
-      clientID: '39911ffdc52e4874ad5264ac684f64b1'
-      };
-   
-  
-      $('#instagram_grid').spectragram('getSelfMedia',{size:'small',max:'9',wrapEachWith:'<div class="instagram"></div>'}); 
-      
-    
-</script>
+
 
 </body>
 

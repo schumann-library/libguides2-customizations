@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
   var weeklyhours = "https://api3.libcal.com/api_hours_grid.php?iid=1176&format=json&weeks=1&callback=?";
   
 
@@ -55,4 +55,3 @@ $(document).ready(function() {
     
   });
 
-});
