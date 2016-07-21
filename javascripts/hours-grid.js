@@ -6,7 +6,7 @@ $(document).ready(function() {
   $.getJSON(weeklyhours, function(data) {
 
     //declare variable inside callback function to store all the HTML   //that we want to output as our table of hours.
-    var myHTML = '<table class="table" id="hours_display"><tr class="hours header"><th>Day</th><th>Date</th><th>Open</th><th>Close</th></tr>';
+    var myHTML = '<div class="table-responsive"><table class="table" id="hours_display"><tr class="hours header"><th>Day</th><th>Date</th><th>Open</th><th>Close</th></tr>';
 
     //for each array of location objects... 
 
@@ -49,9 +49,9 @@ $(document).ready(function() {
               
         });
       });
- myHTML += "</table>";
+ myHTML += "</table></div>";
     });
-    $('#week').html(myHTML);
+    $('#hours_grid').html(myHTML);
     
   });
 

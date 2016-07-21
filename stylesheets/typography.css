@@ -68,3 +68,7 @@ h6 {
     margin-bottom: 24px;
     
 }
+
+/* live hours grid*/
+
+#hours-grid .open {background-color:blue;}
