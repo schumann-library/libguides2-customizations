@@ -1,9 +1,9 @@
 $(document).ready(function() {
   var weeklyhours = "https://api3.libcal.com/api_hours_grid.php?iid=1176&format=json&weeks=1&callback=?";
-  var fourweeks = "https://api3.libcal.com/api_hours_grid.php?iid=1176&format=json&weeks=4&callback=?";
+  
 
   //read in JSON from libcal
-  $.getJSON(fourweeks, function(data) {
+  $.getJSON(weeklyhours, function(data) {
 
     //declare variable inside callback function to store all the HTML   //that we want to output as our table of hours.
     var myHTML = '<table class="table" id="hours_display"><tr class="hours header"><th>Day</th><th>Date</th><th>Open</th><th>Close</th></tr>';
@@ -31,7 +31,7 @@ $(document).ready(function() {
                 myHTML += '<tr class="hours open">';
               }
           else {
-            myHTML += '<tr class="hours">'
+            myHTML += '<tr class="hours">';
           }
           myHTML += '<td>' + day + "</td><td>" + day_object.date + "</td>";
           //console.log("currently open "+ day_object.times.currently_open);
