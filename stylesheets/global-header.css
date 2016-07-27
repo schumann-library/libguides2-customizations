@@ -22,7 +22,17 @@
 
 /*************************/
 
+#institutional_header {
+    margin:5px 0px;
+ flex: 0 1 100%;
+ align-self:flex-start;
+}
 
+#global_header nav {
+    border:0;
+    border-radius:0;
+   
+}
 
 #header_flex_container {
     display: flex;
@@ -84,6 +94,7 @@
 @media all and (max-width: 991px) {
     #header_flex_container {
         flex-direction: column;
+        align-items:center;
     }
     #main_menu {
         justify-content: space-around;
@@ -124,7 +135,7 @@
 }
 
 #my_library_logo {
-    margin: 15px;
+    margin:15px 15px 15px 0;
 }
 
 
@@ -145,7 +156,7 @@
 
 .img-responsive { 
     
-    width:100%;
+   /* width:100%; */
 }
 
 
