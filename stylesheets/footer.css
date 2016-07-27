@@ -1,6 +1,8 @@
 #my_footer {
     background-color:#333;
     color: #ffd600;
+    margin-top: 2em;
+    padding-top: 2em;
 }
 
 #my_footer ul {margin-bottom: 30px;}
