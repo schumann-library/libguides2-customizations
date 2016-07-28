@@ -24,7 +24,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   
+  
+  <!-- BEGIN: Custom JS/CSS Code -->
+  <!-- stylesheets and script includes to be copied into "Custom JS/CSS Code" section of libguides -->
+  
+  
 
+<!-- LibGuides uses some deprecated meta tags. We use modern ones -->  
+
+<!-- 
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/libguides-global.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/global-header.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/typography.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/content-boxes.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/guide-menu.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/searchblaster.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/footer.css" rel="stylesheet">
+<link href="http://adam-shire-wit.github.io/libguides2-customizations/stylesheets/instagram.css" rel="stylesheet">
+
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<script src="http://adam-shire-wit.github.io/libguides2-customizations/javascripts/get-hours.js"></script>
+  
+  -->
+
+<!-- END: Custom JS/CSS Code -->
 
 
 </head>
@@ -49,8 +82,8 @@
       
         <div id="header_flex_container" class="container">
           <div id="institutional_header">
-          <a href="http://wit.edu"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;Back to wit.edu</a>
-      </div>
+            <a href="http://wit.edu"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;Back to wit.edu</a>
+          </div>
           <div id="my_library_logo">
             <a href="http://library.wit.edu/home">
               <img class="img-responsive" src="https://s3.amazonaws.com/libapps/accounts/44017/images/ddslibrarylogo.color.blacktype-530x55.png" alt="Douglas D. Schumann Library & Learning Commons">
@@ -58,7 +91,7 @@
           </div>
           <div id="my_library_hours">
             <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-            <span class="hours-today" id="hours_today"><a href="http://wit.edu/library/about/hours.html" id="hours_link">Today's hours</a></span>
+            <span class="hours-today" id="hours_today"><a href="http://library.wit.edu/about/visit" id="hours_link">Today's hours</a></span>
           </div>
         </div>
         <!-- END: .flex-container -->
@@ -123,9 +156,7 @@
       </div>
     </nav>
   </div>
-    <!-- get library hours from libcal -->
- 
-  <script src="javascripts/get-hours.js"></script>
+  
   <!-- END: #global_header -->
 
 <!-- this div is just for display purposes in development. Don't copy it. -->

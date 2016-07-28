@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
                 //callback parameter is not in libcal documentation but it is necessary
                 var libcalHours = "https://api3.libcal.com/api_hours_today.php?iid=1176&lid=0&format=json&callback=?";
                 $.getJSON(libcalHours, function(data){
@@ -18,7 +18,9 @@
                         $("#hours_link").append(": "+hours.rendered);
        
                         //overwrite link to hours page with the URL from libcal. 
-                          $("#hours_link").attr("href",hours.url);
+                          //$("#hours_link").attr("href",hours.url);
     
                         });
   });
+  
+});
