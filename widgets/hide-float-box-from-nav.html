@@ -1,0 +1,27 @@
+<script>
+// Hide floating boxes from box level navigation.
+// match IDs of floating boxes against box level navigation menu items and add '.hidden' class
+
+$(document).ready(function(){
+  
+  var IDs = $(".s-lib-floating-box")         // find class for floating boxes
+  .map(function() { return '#'+ this.id;}) // get IDs and add '#' to each one so we can match href attribute
+  .get(); // convert to an array
+
+  //get set of <a> within box level navigation. These are what we want to hide.
+  $('.s-lg-boxnav > li > a').each(function() {
+   
+       var myHREF = $(this).attr('href');
+       //console.log("The HREF is " + myHREF);
+    //console.log("The ID is " + IDs);
+    //console.log($.inArray(myHREF, IDs));
+     
+    //if the <a href> in the menu item matches the ID of a floating box, hide the menu item.
+     if ($.inArray(myHREF, IDs) !== -1){
+        $(this).parent().addClass('hidden');}
+       
+    
+    });
+                               
+});
+</script>

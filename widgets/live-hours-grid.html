@@ -1,4 +1,6 @@
-
+<div id="hours_grid"></div>
+<script>
+$(document).ready(function() {
   var weeklyhours = "https://api3.libcal.com/api_hours_grid.php?iid=1176&format=json&weeks=1&callback=?";
   
 
@@ -6,7 +8,7 @@
   $.getJSON(weeklyhours, function(data) {
 
     //declare variable inside callback function to store all the HTML   //that we want to output as our table of hours.
-    var myHTML = '<div class="table-responsive"><table class="table" id="hours_display"><tr class="hours header"><th>Day</th><th>Date</th><th>Open</th><th>Close</th></tr>';
+    var myHTML = '<div class="table-responsive"><table class="table" id="hours_display"><tr class="hours header"><th>Day</th><!--<th>Date</th> --><th>Open</th><th>Close</th></tr>';
 
     //for each array of location objects... 
 
@@ -33,7 +35,7 @@
           else {
             myHTML += '<tr class="hours">';
           }
-          myHTML += '<td>' + day + "</td><td>" + day_object.date + "</td>";
+          myHTML += '<td>' + day + "</td>";
           //console.log("currently open "+ day_object.times.currently_open);
           //console.log("date " + day_object.date);
           //day objects have properties we care about
@@ -55,3 +57,5 @@
     
   });
 
+});
+</script>
