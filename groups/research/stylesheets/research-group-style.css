@@ -8,8 +8,9 @@
 *************************************/
 
 /*hide the site name in the breadcrumbs*/
-/*#s-lib-bc-site {
-    display: none;}*/
+#s-lib-bc-customer {
+    display: none;}
+
     
 
 /*****************************/
