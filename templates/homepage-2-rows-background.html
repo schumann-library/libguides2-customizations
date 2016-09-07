@@ -15,7 +15,7 @@
 				{{ADMIN_MINI_CMD_BAR}}
 			</div>
             <div id="s-lg-guide-header-info">
-                <h1 id="s-lg-guide-name"></h1>
+                <h1 id="s-lg-guide-name">{{guide_title}}</h1>
                 <div id="s-lg-guide-desc-container">
                     <span id="s-lg-guide-description">{{guide_description}}</span>
                 </div> 
@@ -55,7 +55,7 @@
             <div id="search_blaster_input" class="input-group input-group-lg">
 
 
-              <input type="text" class="form-control" id="search_blaster_query" name="bquery" placeholder="I want to find..." title="Search the library catalog" autocomplete="off" onkeyup="autocomp()">
+              <input type="text" class="form-control" id="search_blaster_query" name="bquery" placeholder="Find books, articles and more…" title="Search the library catalog" autocomplete="off" onkeyup="autocomp()">
 
               <div class="input-group-btn">
                 <ul class="dropdown-menu  keep-open-on-click" id="search_blaster_options">
@@ -117,7 +117,7 @@
   </section>
     </div>
 </div>
-<script type="text/javascript" src="http://adam-shire-wit.github.io/libguides2-customizations/javascripts/searchblaster.js"></script>
+<script type="text/javascript" src="http://schumann-library.github.io/libguides2-customizations/javascripts/searchblaster.js"></script>
 <script type="text/javascript">
   //##### Required Variables #####
   //ID of form for submission of terms to search
@@ -130,59 +130,70 @@
   var searchOnClick = true;
   //##### End Variables #####
 </script>
-<script src="http://widgets.ebscohost.com/prod/simplekey/autocomplete/autocomp.js"></script>
+<!-- <script src="http://widgets.ebscohost.com/prod/simplekey/autocomplete/autocomp.js"></script> -->
 <!-- END: SEARCH BLASTER -->
 
 
-        <div id="s-lg-guide-main" class="container s-lib-main s-lib-side-borders">
-            {{empty_page_sub_page_list}}
-<div id="s-lg-row-1" class="row s-lg-row">
- <div id="s-lg-col-1" class="col-md-12">
-          <div class="s-lg-col-boxes">
-               {{content_col_1}}
+       <div id="s-lg-guide-main">
+     {{empty_page_sub_page_list}}
+     <div id="first_row">
+     <div class="container">     
+    
+     <div id="s-lg-row-1" class="row s-lg-row">
+          <div id="s-lg-col-1" class="col-md-12">
+               <div class="s-lg-col-boxes">
+                    {{content_col_1}}
+               </div>
           </div>
      </div>
+     </div>
 </div>
+
 <div id="second_row">
-<div id="s-lg-row-2" class="row s-lg-row">
+     <div class="container">
+          <div id="s-lg-row-2" class="row s-lg-row">
 
-     <div id="s-lg-col-2" class="col-md-6">
-          <div class="s-lg-col-boxes">
-               {{content_col_2}}
+               <div id="s-lg-col-2" class="col-md-6">
+                    <div class="s-lg-col-boxes">
+                         {{content_col_2}}
+                    </div>
+               </div>
+
+               <div id="s-lg-col-3" class="col-md-6">
+                    <div class="s-lg-col-boxes">
+                         {{content_col_3}}
+                    </div>
+               </div>
+
           </div>
      </div>
-
-     <div id="s-lg-col-3" class="col-md-6">
-          <div class="s-lg-col-boxes">
-               {{content_col_3}}
-          </div>
-     </div>
-
 </div>
+<div id="third_row">
+     <div class="container">
+          <div id="s-lg-row-3" class="row s-lg-row">
+
+               <div id="s-lg-col-4" class="col-md-4">
+                    <div class="s-lg-col-boxes">
+                         {{content_col_4}}
+                    </div>
+               </div>
+
+               <div id="s-lg-col-5" class="col-md-4">
+                    <div class="s-lg-col-boxes">
+                         {{content_col_5}}
+                    </div>
+               </div>
+
+               <div id="s-lg-col-6" class="col-md-4">
+                    <div class="s-lg-col-boxes">
+                         {{content_col_6}}
+                    </div>
+               </div>
+          </div>
+     </div>
 </div>
-<div id="s-lg-row-3" class="row s-lg-row">
-
-     <div id="s-lg-col-4" class="col-md-4">
-          <div class="s-lg-col-boxes">
-               {{content_col_4}}
-          </div>
-     </div>
-
-     <div id="s-lg-col-5" class="col-md-4">
-          <div class="s-lg-col-boxes">
-               {{content_col_5}}
-          </div>
-     </div>
-
-     <div id="s-lg-col-6" class="col-md-4">
-          <div class="s-lg-col-boxes">
-               {{content_col_6}}
-          </div>
-     </div>
-
+{{page_prev_next_links}}
 </div>
-            {{page_prev_next_links}}
-        </div>
         <!-- END: Guide Content -->
         <!-- BEGIN: Page Footer -->
         

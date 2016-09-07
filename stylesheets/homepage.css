@@ -1,5 +1,6 @@
 /* Include this CSS in the guide custom JS/CSS for the home page */
 
+#s-lg-guide-name {display:none;}
 #s-lg-guide-tabs-title-bar { border-top: 0; }
 h1#s-lg-guide-name {margin:0;}
 @media (min-width:768px){
