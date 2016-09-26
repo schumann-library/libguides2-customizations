@@ -1,0 +1,27 @@
+ <!-- BEGIN: Custom JS/CSS Code -->
+  <!-- stylesheets and script includes to be copied into "Custom JS/CSS Code" section of libguides -->
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="shortcut icon" href="https://s3.amazonaws.com/libapps/accounts/44017/images/favicon.ico">
+
+
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/libguides-global.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/global-header.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/typography.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/content-boxes.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/guide-menu.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/searchblaster.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/footer.css" rel="stylesheet">
+<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/instagram.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+
+<script src="http://schumann-library.github.io/libguides2-customizations/javascripts/get-hours.js"></script>
+  <!-- END: Custom JS/CSS Code -->
