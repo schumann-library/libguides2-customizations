@@ -110,6 +110,7 @@ background:white;
 #main_menu .dropdown-menu a {
     text-transform: uppercase;
     padding: .5em 1.5em;
+    color:#000;
 }
 
 @media all and (max-width: 991px) {
@@ -133,12 +134,11 @@ background:white;
     #main_menu li:last-of-type a {
         border-bottom: none;
     }
-    #main_menu .open .dropdown-menu {
-        position: relative;
+   #main_menu .open .dropdown-menu {
         float: none;
         border: 0;
         box-shadow: 0 0 0 0;
-        background-color: #fff;
+        background-color: #fff; 
     }
    
     
