@@ -53,6 +53,8 @@ background:white;
 
 #my_library_logo {
     margin:15px 15px 15px 0;
+    max-width:500px;
+    
 }
 #my_library_info, #hours_link {
     text-align:center;
