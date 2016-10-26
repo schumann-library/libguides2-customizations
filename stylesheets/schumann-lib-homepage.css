@@ -1,5 +1,11 @@
 /* Include this CSS in the guide custom JS/CSS for the home page */
 
+#alert_banner {
+    background:red; 
+    color:white;
+    
+}
+
 #s-lg-guide-name {
     display: none;
 }
