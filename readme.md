@@ -21,8 +21,10 @@ Custom code for LibGuides v2 for the Douglas D. Schumann Library
 * **global-searchblaster.css** - styling for searchblaster widget (EBSCO discovery search box)
 * **global-typography.css** - styling for fonts
 * **libguides-global.css** - undo the padding set by libguides so we can use bootstrap's default
+
 ### Research Guides Group
 * **research-group-style.css** - styles for research guides - mainly side nav, and content box styling
+
 ### Schumann Library Website Group
 * **schumann-lib-content-boxes.css** - styles for website content boxes
 * **schumann-lib-guide-menu.css** - styles for website side-nav menu
