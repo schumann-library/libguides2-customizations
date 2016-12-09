@@ -15,12 +15,15 @@ Custom code for LibGuides v2 for the Douglas D. Schumann Library
 
 
 ## stylesheets
+### System level
 * **global-header.css** - logo and main navigation. used on research guides and schumann library website
 * **global-footer.css** - footer navigation, address, and links to social media
 * **global-searchblaster.css** - styling for searchblaster widget (EBSCO discovery search box)
 * **global-typography.css** - styling for fonts
 * **libguides-global.css** - undo the padding set by libguides so we can use bootstrap's default
+### Research Guides Group
 * **research-group-style.css** - styles for research guides - mainly side nav, and content box styling
+### Schumann Library Website Group
 * **schumann-lib-content-boxes.css** - styles for website content boxes
 * **schumann-lib-guide-menu.css** - styles for website side-nav menu
 * **schumann-lib-homepage.css** - styles for website homepage - hide the title, add a background, etc. 
@@ -58,6 +61,6 @@ Note: widgets may call external javascript.
 used on research guides and schumann library website
 * **global-header.html** - logo and main navigation. 
   * related styles - **global-header.css**
-* **global-header.html** - footer navigation, addres, and links to social media.  
+* **global-footer.html** - footer navigation, addres, and links to social media.  
   * related styles - **global-footer.css** 
 
