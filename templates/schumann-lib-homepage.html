@@ -135,5 +135,41 @@
                 {{public_footer}}
 		<!-- END: Custom Footer -->
 
+<!-- add  JSON-LD -->
+<script> 
+window.jsonldcb1317 = function(data) { 
+   
+   data['@type']='Library' ;
+   
+   data["sameAs"] = ["http://www.facebook.com/witlibrary",
+"http://www.twitter.com/witlibrary",
+"http://www.instagram.com/witlibrary"];  
+   
+data["address"] = {
+"@type": "PostalAddress",
+"addressLocality": "Boston",
+"addressRegion": "MA",
+"postalCode":"02115",
+"streetAddress": "550 Huntington Avenue"
+};
+data["description"] = "The Douglas D. Schumann Library & Learning Commons is a dynamic, technology-driven space for students and faculty to collaborate and learn.";
+   
+data["telephone"] = "617-989-4040";
 
+data["geo"] = {
+"@type": "GeoCoordinates",
+"latitude": "42.3360191",
+"longitude": "-71.0953891"
+};
+
+
+   var e = document.createElement("script"); 
+   e.type = "application/ld+json";
+   e.text = JSON.stringify(data); 
+   document.body.appendChild(e); 
+}; 
+var jsonld_1317 = document.createElement("script"); 
+jsonld_1317.setAttribute("src","//api3.libcal.com/api_hours_grid.php?format=jsonld&iid=1176&lid=1317&callback=jsonldcb1317"); 
+document.body.appendChild(jsonld_1317); 
+</script> 
 	</body>
