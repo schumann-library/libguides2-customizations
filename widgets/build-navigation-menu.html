@@ -1,0 +1,61 @@
+<script id="buildNavbar">
+//Adds bootstrap code to a plain unordered list to create a responsive navigation bar. The initial list should consist of <ul> <li> and <a> tags only and should be free of bootstrap nav classes or ids. 
+
+//Text in a dropdown list that is not in an <a> tag will be used as a header. 
+
+//use [seperator] as a list item in a dropdown list to create a horizontal line separator between list items.
+
+//To use, add this code to a libguides box which contains the list you want to use for your nav bar using the "add media/widget" option.
+
+// To use as a header navigation on all libguides pages:
+
+// 1. create a box in libguides that contains only the unordered list you want to use for your nav menu.
+
+// 2. Include this box on a libguides template using the content box ID keyword and wrap the keyword in some code from bootstrap (see below).
+
+//This should go somewhere in your page template, probably near the top. replace ID below with the id from the libguides box containing your menu list:
+//
+// <nav class="navbar navbar-default">
+//   <div class="container-fluid">
+//    {{content_box_ID}}
+//   </div>
+//  </nav>
+//
+
+
+//Code Begins Here
+
+//find the navbar list on the page. we use the ID of this script.
+myNavbar = $('#buildNavbar').closest('.navbar.navbar-default').find('ul').first();
+
+
+//add 'nav navbar-nav' classes to first ul which should contain our nested list of navigation links
+
+
+myNavbar.addClass('nav navbar-nav');
+
+// add wrappers
+myNavbar.wrapAll('<div class="collapse navbar-collapse" id="my_navbar"></div>');
+
+// add navbar header for collapsed menu
+my_navbar_header = '<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>';
+$('#my_navbar').before(my_navbar_header);
+
+// add 'dropdown' class to dropdown list-item which wraps the anchor containing the top level label.
+myNavbar.find("li:has('ul')").addClass('dropdown');
+
+// add class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to anchor containing the top level label. 
+myNavbar.find("li:has('ul')>a").addClass('dropdown-toggle').attr("data-toggle", "dropdown");
+
+// append carets to top-level labels on dropdowns
+myNavbar.find('.dropdown-toggle').append('<span class="caret"></span>');
+
+// add class="dropdown-menu" to ul containing dropdown menu items
+myNavbar.find('a + ul').addClass("dropdown-menu");
+
+// add role="separator" class="divider" to dropdown list items which contain [separator]. Then remove the [seperator] from the li.
+myNavbar.find(".dropdown-menu li:contains('[separator]')").attr("role","separator").addClass("divider").empty();
+
+//add class="dropdown-header" to menu list items no anchor tag and are not empty
+myNavbar.find(".dropdown-menu li").filter(":not(:has('a'))").not('.divider').addClass("dropdown-header");
+</script>
