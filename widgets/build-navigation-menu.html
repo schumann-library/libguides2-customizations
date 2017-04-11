@@ -1,27 +1,41 @@
 <script id="buildNavbar">
-// PURPOSE
-// Adds bootstrap navbar code to a plain unordered list to create
-// a responsive navigation bar. The initial list should consist of <ul> <li> and <a> elements only 
+
+// GOAL
+// Make updating a bootstrap navigation menu as simple as updating an unordered list using the WSIWYG editor in libguides. 
+
+// REQUIREMENTS
+// The list to be used for the navigation menu should consist of <ul> <li> and <a> elements only 
 // and should be free of existing bootstrap nav classes or ids. 
 
+
 // DROPDOWN HEADERS AND DIVIDERS
-// Text in a dropdown list element that is not in an <a> element will be used as a dropdown menu header. 
+// Text in a dropdown <li> element that is not wrapped in an <a> element will be used as a dropdown menu header. 
 // To create a horizontal line separator between list items use "<li>[separator]</li>".
 
-//
+// EXAMPLE OF UNORDERED LIST
+// <ul>
+//	<li><a href="#">top-level label</a>
+//	<ul>
+//		<li>This is A Heading</li>
+//		<li><a href="/dropdown-menu-item-1.html">dropdown menu item 1</a></li>
+//		<li><a href="/dropdown-menu-item-2.html">dropdown menu item 2</a></li>
+//		<li>[separator]</li>
+//		<li><a href="/dropdown-menu-item-3.html">dropdown menu item 3</a></li>
+//		<li><a href="/dropdown-menu-item-4.html">dropdown menu item 4</a></li>
+//	</ul>
+//	</li>
+// <ul> 
 
-//To use, add all of this code to a libguides box which contains the list you want to use for your navbar using the "add media/widget" option.
+
+// USING THIS CODE
 
 
+// 1. Create a box in libguides that contains the unordered list you want to use for your nav menu (see example above). You can do this on a new, unpublished guide. 
+// 2. Using the "add media/widget" option on the guide edit screen, add this entire script to that same box.
+// 3. Using the content box ID keyword, include this box on a libguides template in the place you want your navigation menu to appear.
+// 4. wrap the keyword in some code from bootstrap (see below).
 
-// To use as a header navigation on all libguides pages:
-
-// 1. create a box in libguides that contains only the unordered list you want to use for your nav menu.
-
-// 2. Include this box on a libguides template using the content box ID keyword and wrap the keyword in some code from bootstrap (see below).
-
-//This should go somewhere in your page template, probably near the top. replace ID below with the id from the libguides box containing your menu list:
-//
+// EXAMPLE OF INCLUDING IN A LIBGUIDES TEMPLATE
 // <nav class="navbar navbar-default">
 //   <div class="container-fluid">
 //    {{content_box_ID}}
