@@ -37,6 +37,22 @@
     border-radius: 0;
 }
 
+//for navigation widget
+#global_header .s-lib-box-content {
+padding:0;
+}
+
+//for navigation widget
+#global_header .s-lib-box.s-lib-box-std {
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+
+//for navigation widget
+#global_header .s-lib-box-title {
+display:none;
+}
+
 #global_header .navbar-collapse {
     padding-right: 0px;
     padding-left: 0px;

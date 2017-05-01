@@ -53,14 +53,16 @@ myNavbar = $('#buildNavbar').closest('.navbar.navbar-default').find('ul').first(
 //add 'nav navbar-nav' classes to first ul which should contain our nested list of navigation links
 
 
-myNavbar.addClass('nav navbar-nav');
+myNavbar.attr('id', 'main_menu').addClass('nav navbar-nav');
 
 // add wrappers
-myNavbar.wrapAll('<div class="collapse navbar-collapse" id="my_navbar"></div>');
+myNavbar.wrapAll('<div class="collapse navbar-collapse" id="my_navbar"><div class="container"></div></div>');
 
-// add navbar header for collapsed menu
-my_navbar_header = '<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>';
-$('#my_navbar').before(my_navbar_header);
+// build hamburger button for collapsed menu
+my_navbar_header = '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>';
+
+//add it before our flex-header
+$('#header_flex_container').before(my_navbar_header);
 
 // add 'dropdown' class to dropdown list-item which wraps the anchor containing the top level label.
 myNavbar.find("li:has('ul')").addClass('dropdown');
