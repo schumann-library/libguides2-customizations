@@ -34,13 +34,13 @@ h1#s-lg-guide-name {
 @media (min-width:768px) {
     #first_row {
     background-color: #aaa;
-    background-image: url(https://schumann-library.github.io/libguides2-customizations/livingroom%20to%20cafe%20crop.png);
+    background-image: url(https://libapps.s3.amazonaws.com/accounts/44017/images/livingroom_to_cafe_crop.jpg);
     padding-top: 30px;
     padding-bottom: 30px;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0% 40%;
+    background-position: 100% 40%;
     }
     #s-lg-row-1 {
         background: rgba(247, 247, 247, 0.88);
