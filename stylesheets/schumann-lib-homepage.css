@@ -1,5 +1,7 @@
 /* Include this CSS in the guide custom JS/CSS for the home page */
 
+/* BEGIN: schumann-lib-homepage.css */
+
 #alert_banner {
     background:red; 
     color:white;
@@ -14,7 +16,7 @@
     border-top: 0;
 }
 
-h1#s-lg-guide-name {
+#s-lg-guide-name {
     margin: 0;
 }
 
@@ -34,13 +36,12 @@ h1#s-lg-guide-name {
 @media (min-width:768px) {
     #first_row {
     background-color: #aaa;
-    background-image: url(https://libapps.s3.amazonaws.com/accounts/44017/images/livingroom_to_cafe_crop.jpg);
+    background-image: url(https://libapps.s3.amazonaws.com/accounts/44017/images/livingroom-to-cafe-crop-2.jpg);
     padding-top: 30px;
     padding-bottom: 30px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 40%;
+    background-position: 50% 0%;
     }
     #s-lg-row-1 {
         background: rgba(247, 247, 247, 0.88);
@@ -50,3 +51,5 @@ h1#s-lg-guide-name {
         margin-bottom: 0;
     }
 }
+
+/* END: schumann-lib-homepage.css */
