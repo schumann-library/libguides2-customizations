@@ -3,6 +3,11 @@
     color: #4c4c4c;
     margin-top: 2em;
     padding-top: 2em;
+    font-size:10px;
+}
+#my_footer--address {
+    display:flex;
+    flex-wrap: wrap;
 }
 
 #my_footer ul {margin-bottom: 30px;padding-left:10px;}
