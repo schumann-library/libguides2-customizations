@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="shortcut icon" href="https://s3.amazonaws.com/libapps/accounts/44017/images/favicon.ico">
+<link rel="shortcut icon" href="//s3.amazonaws.com/libapps/accounts/44017/images/favicon.ico">
 
 
-<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/libguides-global.css" rel="stylesheet">
-<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/global-header.css" rel="stylesheet">
-<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/typography.css" rel="stylesheet">
-<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/searchblaster.css" rel="stylesheet">
-<link href="http://schumann-library.github.io/libguides2-customizations/stylesheets/footer.css" rel="stylesheet">
+<link href="https://schumann-library.github.io/libguides2-customizations/stylesheets/libguides-global.css" rel="stylesheet">
+<link href="https://schumann-library.github.io/libguides2-customizations/stylesheets/global-header.css" rel="stylesheet">
+<link href="https://schumann-library.github.io/libguides2-customizations/stylesheets/typography.css" rel="stylesheet">
+<link href="https://schumann-library.github.io/libguides2-customizations/stylesheets/searchblaster.css" rel="stylesheet">
+<link href="https://schumann-library.github.io/libguides2-customizations/stylesheets/footer.css" rel="stylesheet">
 
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 
 
-<script src="http://schumann-library.github.io/libguides2-customizations/javascripts/get-hours.js"></script>
+<script src="//schumann-library.github.io/libguides2-customizations/javascripts/get-hours.js"></script>
   <!-- END: System Level Custom JS/CSS Code -->
