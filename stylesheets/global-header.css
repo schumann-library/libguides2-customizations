@@ -72,6 +72,11 @@ display:none;
     flex: 1 1 auto;
 }
 
+#my_library_logo img {
+ max-width: 100%;   
+}
+    
+
 #my_library_info,
 #hours_link, #my_library_info--social_media a {
     text-align: center;
