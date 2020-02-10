@@ -50,6 +50,5 @@
 .s-lib-box .s-lib-box-title {
     font-size: 30px;
     font-weight: normal;
-    border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
