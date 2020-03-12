@@ -1,14 +1,15 @@
 /* Include this CSS in the guide custom JS/CSS for the home page */
 
 /* BEGIN: schumann-lib-homepage.css */
-p.container {
-    margin: 0;
-}
 
 #alert_banner {
     background:red; 
     color:white;
     
+}
+
+#alert_banner p {
+    margin: o;
 }
 
 #s-lg-guide-name {
