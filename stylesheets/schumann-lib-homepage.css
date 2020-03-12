@@ -1,7 +1,7 @@
 /* Include this CSS in the guide custom JS/CSS for the home page */
 
 /* BEGIN: schumann-lib-homepage.css */
-p.clearfix{
+p.s-lib-box s-lib-box-std s-lib-floating-box {
     margin: 0;
 }
 
