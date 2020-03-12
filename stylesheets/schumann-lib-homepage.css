@@ -8,9 +8,14 @@
     
 }
 
+#alert_banner p {
+    line-height: 20px;
+}
+
 #s-lg-content-38699514 p {
     margin:0;
     padding:0;
+    line-height: 20px;
 }
 
 #s-lg-guide-name {
