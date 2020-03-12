@@ -1,6 +1,9 @@
 /* Include this CSS in the guide custom JS/CSS for the home page */
 
 /* BEGIN: schumann-lib-homepage.css */
+p.clearfix{
+    margin: 0;
+}
 
 #alert_banner {
     background:red; 
