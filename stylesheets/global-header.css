@@ -140,12 +140,6 @@ display:none;
     color: #000;
 }
 
-#main_menu .drp-header {
-    color: #000000!important;
-    font-size: 1.5em!important;
-    display: block;
-    padding: .5em 1em;
-    font-weight: normal;
 
 
 @media all and (max-width: 991px) {
