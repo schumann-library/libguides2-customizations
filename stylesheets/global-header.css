@@ -170,7 +170,7 @@ display:none;
 }
 #websearch
 {
-    display: inline-block;
+   /* display: inline-block;*/
     margin-left: auto;
     margin-right: auto;
     text-align: left;
