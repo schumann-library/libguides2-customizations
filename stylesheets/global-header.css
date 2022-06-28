@@ -21,14 +21,18 @@
 
 
 /*************************/
+#global_header {
+    background-color: #202931;
+}
 
 #global_header .navbar-default {
-    background: #202931;
+    background: white;
 }
 
 #institutional_header a {
     color: #000000;
     margin: 5px;
+    background-color: #202931;
 }
 
 #global_header nav {
