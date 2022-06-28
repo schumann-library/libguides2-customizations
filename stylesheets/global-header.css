@@ -140,7 +140,7 @@ display:none;
     color: #000;
 }
 
-#main_menu .dropdown-header {
+#main_menu .drp-header {
     text-transform: lowercase!important;
     color: #000000!important;
     font-size: 1.5em!important;
