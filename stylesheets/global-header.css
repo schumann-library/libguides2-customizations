@@ -165,5 +165,6 @@ display:none;
     }
     form .navbar-form 
     {float: none;
-        width: 100%;}
+        width: 100%;
+    margin: auto;}
 }
