@@ -163,8 +163,9 @@ display:none;
         box-shadow: 0 0 0 0;
         background-color: #fff;
     }
-    form .navbar-form 
-    {float: none;
-        width: 100%;
-    margin: auto;}
+    #websitesearch {
+    float: none;
+    width: 100%;
+    margin: auto;
+    }
 }
