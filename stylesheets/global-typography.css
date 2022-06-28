@@ -20,7 +20,7 @@ h6 {
 .s-lib-header h1 {
     font-size: 28px;
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 45px;
 }
 
@@ -37,8 +37,8 @@ h6 {
 
 .s-lib-box .s-lib-box-title {
     font-size: 26px;
-    color: #777;
-    text-transform:uppercase;
+    color: #000000;
+    /*text-transform:uppercase;*/
     font-weight:normal;
 }
 
@@ -55,4 +55,4 @@ h6 {
 
 /* live hours grid*/
 
-#hours_grid .open {background-color:#ffd600;font-weight:bold;}
+#hours_grid .open {background-color:#FFCB05;font-weight:bold;}
