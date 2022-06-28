@@ -166,6 +166,7 @@ display:none;
         margin-right: -15px;
         margin-left: -15px;
     }
+   
     #main_menu li:last-of-type a {
         border-bottom: none;
     }
@@ -173,19 +174,8 @@ display:none;
         float: none;
         border: 0;
         box-shadow: 0 0 0 0;
-        background-color: #fff;
+        background-color: #ffffff!important;
+        color: #000000;
     }
-    div.webform
-{
-    display: block;
-    text-align: center;
-}
-#websearch
-{
-   /* display: inline-block;*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
     
 }
