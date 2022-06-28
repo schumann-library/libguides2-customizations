@@ -112,14 +112,14 @@ display:none;
     text-decoration: none;
     display: block;
     padding: .5em 1em;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.25em;
     font-weight: normal;
     letter-spacing: .0714em;
 }
 
 #main_menu .open .dropdown-toggle {
-    background:#FFCB05;
+    background-color:#FFCB05;
     color: #000;
 }
 
@@ -137,7 +137,7 @@ display:none;
 #main_menu .dropdown-menu a {
     /*text-transform: uppercase;*/
     padding: .5em 1.5em;
-    color: #000000;
+    color: white;
 }
 
 
