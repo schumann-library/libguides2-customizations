@@ -26,14 +26,14 @@
 }
 
 #global_header .navbar-default {
-    background: white;
+    background: #000000;
 }
 
 #institutional_header a {
     color: #ffffff;
     margin: 5px;
     background-color: #202931;
-    width: 100%;
+    width: 100vw;
 }
 
 #global_header nav {
@@ -112,9 +112,8 @@ display:none;
     text-decoration: none;
     display: block;
     padding: .5em 1em;
-    color: #eee;
+    color: #000000;
     font-size: 1.25em;
-  /* text-transform: uppercase; */
     font-weight: normal;
     letter-spacing: .0714em;
 }
@@ -131,14 +130,14 @@ display:none;
 
 #main_menu .dropdown-menu>li>a:focus,
 #main_menu .dropdown-menu>li>a:hover {
-    background: #FFCB05;
-    color: #000;
+    background: #FFCB05!important;
+    color: #000000;
 }
 
 #main_menu .dropdown-menu a {
     /*text-transform: uppercase;*/
     padding: .5em 1.5em;
-    color: #000;
+    color: #000000;
 }
 
 
