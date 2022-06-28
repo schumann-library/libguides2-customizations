@@ -4,7 +4,7 @@
 *********************************/
 
 #s-lg-guide-tabs {
-    background: #DEE8FA;
+    background: #f8f8f8;
     border: 1px solid #e7e7e7;
 }
 
@@ -67,14 +67,14 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     color: #ffffff;
     font-weight: normal;
     padding: 4px 15px;
-    background-color: #DEE8FA
+    background-color: #f8f8f8
 }
 
 #s-lg-tabs-container .nav-pills > li > a:hover {
     border: 0;
     border-radius: 0;
     color: #ffffff;
-    background-color: #DEE8FA;
+    background-color: #f8f8f8;
     text-decoration: underline;
 }
 
