@@ -29,11 +29,10 @@
     background: white;
 }
 
-#institutional_header a {
+#institutional_header p {
     color: #ffffff;
     margin: 5px;
     background-color: #202931;
-    width: 100vw;
 }
 
 #global_header nav {
