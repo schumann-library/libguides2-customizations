@@ -4,7 +4,7 @@
 *********************************/
 
 #s-lg-guide-tabs {
-    background: #f8f8f8;
+    background: #DEE8FA;
     border: 1px solid #e7e7e7;
 }
 
@@ -16,9 +16,9 @@
 /*current page - menu item */
 
 #s-lg-tabs-container .nav-pills > .active > a {
-    color: #333;
+    color: #fffffff;
     cursor: default;
-    background-color: #ffd600;
+    background-color: #FFE600;
     border: 0;
     border-radius: 0;
     font-weight: bold;
@@ -46,10 +46,10 @@
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
-    color: #333;
+    color: #ffffff;
     border: 0;
     border-radius: 0;
-    background-color: #ffd600;
+    background-color: #FFE600;
     text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     padding-bottom: 4px;
     margin-top: 4px;
     margin-bottom: 4px;
-    background-color: #f8f8f8;
+    background-color: #DEE8FA;
     border: 0;
     border-radius: 0;
 }
@@ -108,7 +108,7 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
 .landing-page .active span {
     font-size: 35px;
     font-weight: normal;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .landing-page #s-lg-tabs-container .nav-pills > .active > a::before {
