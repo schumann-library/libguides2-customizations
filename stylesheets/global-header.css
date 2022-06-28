@@ -26,7 +26,7 @@
 }
 
 #global_header .navbar-default {
-    background: #000000;
+    background: white;
 }
 
 #institutional_header a {
@@ -128,8 +128,8 @@ display:none;
     border-radius: 0;
 }
 
-#main_menu .dropdown-menu>li>a:focus,
-#main_menu .dropdown-menu>li>a:hover {
+.navbar .navbar-nav .dropdown-menu>li>a:focus,
+.navbar .navbar-nav .dropdown-menu>li>a:hover {
     background-color: #FFCB05!important;
     color: #000000;
 }
