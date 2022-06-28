@@ -163,8 +163,17 @@ display:none;
         box-shadow: 0 0 0 0;
         background-color: #fff;
     }
-    #websitesearch {
-    float: clear;
-    width: 100%;
-    }
+    div.webform
+{
+    display: block;
+    text-align: center;
+}
+#websearch
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+    
 }
