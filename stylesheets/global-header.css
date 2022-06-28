@@ -144,6 +144,10 @@ display:none;
     text-transform: lowercase!important;
     color: #000000!important;
     font-size: 1.5em!important;
+    display: block;
+    padding: .5em 1em;
+    font-weight: normal;
+    letter-spacing: .0714em;
 
 @media all and (max-width: 991px) {
     #header_flex_container {
