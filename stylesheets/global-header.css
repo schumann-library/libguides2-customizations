@@ -29,7 +29,7 @@
     background: white;
 }
 
-#institutional_header p {
+#institutional_header p, #institutional_header a {
     color: #ffffff;
     margin: 5px;
     background-color: #202931;
@@ -127,8 +127,8 @@ display:none;
     border-radius: 0;
 }
 
-#main_menu dropdown-toggle >li>a:focus,
-#main_menu dropdown-toggle>li>a:hover {
+#main_menu dropdown-toggle li a:focus,
+#main_menu dropdown-toggle li a:hover {
     background-color: #FFCB05!important;
     color: #000000!important;
 }
