@@ -128,8 +128,8 @@ display:none;
     border-radius: 0;
 }
 
-.navbar .navbar-nav .dropdown-menu>li>a:focus,
-.navbar .navbar-nav .dropdown-menu>li>a:hover {
+.navbar .navbar-nav >li>a:focus,
+.navbar .navbar-nav >li>a:hover {
     background-color: #FFCB05!important;
     color: #000000;
 }
