@@ -127,8 +127,8 @@ display:none;
     border-radius: 0;
 }
 
-#main_menu dropdown-toggle li a:focus,
-#main_menu dropdown-toggle li a:hover {
+#main_menu> li>a:focus,
+#main_menu> li>a:hover {
     background-color: #FFCB05!important;
     color: #000000!important;
 }
