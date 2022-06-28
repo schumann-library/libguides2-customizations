@@ -140,6 +140,11 @@ display:none;
     color: #000;
 }
 
+#main_menu .dropdown-header {
+    text-transform: lowercase!important;
+    color: #000000!important;
+    font-size: 1.5em!important;
+
 @media all and (max-width: 991px) {
     #header_flex_container {
         flex-direction: column;
