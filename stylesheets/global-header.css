@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-#my_navbar{ background-color:#555;
+#my_navbar{ background-color:#000000;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -48,7 +48,7 @@
     list-style: none;
     margin: 0;
     padding:0;
-    background: #555;
+    background-color: #000000;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -71,7 +71,7 @@
 }    
 
 #main_menu .open .dropdown-toggle {
-    background: #ffd600;
+    background: #FFCB05;
     color: #000;
 }
 
@@ -82,7 +82,7 @@
 }
 
 #main_menu .dropdown-menu>li>a:focus, #main_menu .dropdown-menu>li>a:hover {
-    background: #ffd600;
+    background: #FFCB05;
     color: #000;
 }
 
