@@ -16,7 +16,7 @@
 /*current page - menu item */
 
 #s-lg-tabs-container .nav-pills > .active > a {
-    color: #fffffff;
+    color: #000000;
     cursor: default;
     background-color: #FFE600;
     border: 0;
@@ -46,7 +46,7 @@
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
-    color: #ffffff;
+    color: #000000;
     border: 0;
     border-radius: 0;
     background-color: #FFE600;
@@ -64,7 +64,7 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
 #s-lg-tabs-container .nav-pills > li > a {
     border: 0;
     border-radius: 0;
-    color: #ffffff;
+    color: #000000;
     font-weight: normal;
     padding: 4px 15px;
     background-color: #f8f8f8
@@ -73,7 +73,7 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
 #s-lg-tabs-container .nav-pills > li > a:hover {
     border: 0;
     border-radius: 0;
-    color: #ffffff;
+    color: #000000;
     background-color: #f8f8f8;
     text-decoration: underline;
 }
@@ -97,7 +97,7 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
 }
 
 .s-lg-tabs-side .s-lg-boxnav .list-group-item a {
-    color: #555;
+    color: #000000;
 }
 
 
