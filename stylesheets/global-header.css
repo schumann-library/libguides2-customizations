@@ -164,8 +164,7 @@ display:none;
         background-color: #fff;
     }
     #websitesearch {
-    float: none;
+    float: clear;
     width: 100%;
-    margin: auto;
     }
 }
