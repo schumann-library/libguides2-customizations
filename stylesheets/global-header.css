@@ -1,11 +1,6 @@
 /***************************/
-
-
 /**********skip link********/
-
-
 /***************************/
-
 
 /*Move skip link further off the page to allow for larger base font-size */
 
@@ -13,14 +8,10 @@
     top: -90px;
 }
 
-
 /*************************/
-
-
 /***** Global Header *****/
-
-
 /*************************/
+
 #global_header {
     background-color: white;
 }
@@ -29,7 +20,8 @@
     background: white;
 }
 
-#institutional_header p, #institutional_header a {
+#institutional_header p,
+#institutional_header a {
     color: #ffffff;
     background-color: #202931;
 }
@@ -41,7 +33,7 @@
 
 /*for navigation widget*/
 #global_header .s-lib-box-content {
-padding:0;
+    padding: 0;
 }
 
 /*for navigation widget*/
@@ -52,7 +44,7 @@ padding:0;
 
 /*for navigation widget*/
 #global_header .s-lib-box-title {
-display:none;
+    display: none;
 }
 
 #global_header .navbar-collapse {
@@ -76,12 +68,12 @@ display:none;
 }
 
 #my_library_logo img {
- max-width: 100%;   
+    max-width: 100%;
 }
-    
 
 #my_library_info,
-#hours_link, #my_library_info--social_media a {
+#hours_link,
+#my_library_info--social_media a {
     text-align: center;
     color: #000000;
     font-weight: bold;
@@ -117,7 +109,7 @@ display:none;
 }
 
 #main_menu .open .dropdown-toggle {
-    background-color:#FFCB05;
+    background-color: #FFCB05;
     color: #000;
 }
 
@@ -126,10 +118,10 @@ display:none;
     border-radius: 0;
 }
 
-#main_menu> li>a:focus,
-#main_menu> li>a:hover {
-    background-color: #FFCB05!important;
-    color: #000000!important;
+#main_menu>li>a:focus,
+#main_menu>li>a:hover {
+    background-color: #FFCB05 !important;
+    color: #000000 !important;
 }
 
 #main_menu .dropdown-menu a {
@@ -138,19 +130,20 @@ display:none;
     color: black;
 }
 
-
-
 @media all and (max-width: 991px) {
+    
     #header_flex_container {
         flex-direction: column;
         align-items: center;
     }
+
     #main_menu {
         justify-content: space-around;
     }
 }
 
 @media all and (max-width: 767px) {
+
     #main_menu {
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
@@ -158,16 +151,17 @@ display:none;
         margin-right: -15px;
         margin-left: -15px;
     }
-   
+
     #main_menu li:last-of-type a {
         border-bottom: none;
     }
+
     #main_menu .open .dropdown-menu {
         float: none;
         border: 0;
         box-shadow: 0 0 0 0;
-        background-color: #ffffff!important;
+        background-color: #ffffff !important;
         color: #000000;
     }
-    
+
 }

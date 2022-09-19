@@ -16,149 +16,149 @@
 //api.instagram.com/oauth/authorize/?client_id=39911ffdc52e4874ad5264ac684f64b1&redirect_uri=http://library.wit.edu/&response_type=token
 
 // Utility for older browsers
-if ( typeof Object.create !== "function" ) {
-    Object.create = function ( obj ) {
-        function F () {}
-        F.prototype = obj;
-        return new F();
-    };
+if (typeof Object.create !== "function") {
+	Object.create = function (obj) {
+		function F() { }
+		F.prototype = obj;
+		return new F();
+	};
 }
 
-( function ( $, window, document, undefined ) {
+(function ($, window, document, undefined) {
 
 	var Instagram = {
 
 		API_URL: "https://api.instagram.com/v1",
 
-        // Initialize function
-        initialize: function ( options, elem ) {
-            this.elem = elem;
-            this.$elem = $( elem );
+		// Initialize function
+		initialize: function (options, elem) {
+			this.elem = elem;
+			this.$elem = $(elem);
 			this.accessData = $.fn.spectragram.accessData,
-			this.accessToken = this.accessData.accessToken,
-			this.clientID = this.accessData.clientID,
-			this.userCredentials = this.clientID + "&access_token=" + this.accessToken + "",
-			this.options = $.extend( {}, $.fn.spectragram.options, options );
-			
+				this.accessToken = this.accessData.accessToken,
+				this.clientID = this.accessData.clientID,
+				this.userCredentials = this.clientID + "&access_token=" + this.accessToken + "",
+				this.options = $.extend({}, $.fn.spectragram.options, options);
+
 			this.messages = {
 				defaultImageAltText: "Instagram Photo related with " + this.options.query,
 				notFound: "This user account is private or doesn't have any photos."
 			};
-        },
-        
-        
-		getSelfMedia: function (){
-		var self = this,
-			getData = "/users/self/media/recent/?&access_token=" + self.accessToken;
-			self.fetch( getData ).done( function (results){
-				self.display( results );
-			
-		});
-		
+		},
+
+
+		getSelfMedia: function () {
+			var self = this,
+				getData = "/users/self/media/recent/?&access_token=" + self.accessToken;
+			self.fetch(getData).done(function (results) {
+				self.display(results);
+
+			});
+
 		},
 
 
 
-        // Users
+		// Users
 		// Get the most recent media published by a user.
-        getRecentMedia: function () {
+		getRecentMedia: function () {
 			var self = this,
 				getData = "/users/" + userID + "/media/recent/?" + self.userCredentials;
 
-                self.fetch( getData ).done( function ( results ) {
-                    self.display( results );
-                } );
+			self.fetch(getData).done(function (results) {
+				self.display(results);
+			});
 		},
 
 		// Search for a user by name.
-        getUserFeed: function () {
+		getUserFeed: function () {
 			var self = this,
 				getData = "/users/search?q=" + self.options.query + "&count=" + self.options.max + "&access_token=" + self.accessToken + "",
 				isUsernameValid = false;
 
-				self.fetch( getData ).done( function ( results ) {
-					if ( results.data.length ) {
-						// Only request media for exact match of username
-						for ( var length = results.data.length, i = 0; i < length; i++ ) {
-							if ( results.data[i].username === self.options.query ) {
-								self.getRecentMedia( results.data[i].id );
-								isUsernameValid = true;
-							}
+			self.fetch(getData).done(function (results) {
+				if (results.data.length) {
+					// Only request media for exact match of username
+					for (var length = results.data.length, i = 0; i < length; i++) {
+						if (results.data[i].username === self.options.query) {
+							self.getRecentMedia(results.data[i].id);
+							isUsernameValid = true;
 						}
 					}
+				}
 
-					if ( isUsernameValid === false ) {
-						$.error( "Spectragram.js - Error: the username " + self.options.query + " does not exist." );
-					}
-                } );
+				if (isUsernameValid === false) {
+					$.error("Spectragram.js - Error: the username " + self.options.query + " does not exist.");
+				}
+			});
 		},
-        // Media
-        // Get a list of what media is most popular at the moment
-        getPopular: function () {
-            var self = this,
-                getData = "/media/popular?client_id=" + self.userCredentials;
+		// Media
+		// Get a list of what media is most popular at the moment
+		getPopular: function () {
+			var self = this,
+				getData = "/media/popular?client_id=" + self.userCredentials;
 
-                self.fetch( getData ).done( function ( results ) {
-                    self.display( results );
-                } );
-        },
+			self.fetch(getData).done(function (results) {
+				self.display(results);
+			});
+		},
 
-        // Tags
-        // Get a list of recently tagged media
-        getRecentTagged: function () {
-            var self = this,
-                getData = "/tags/" + self.options.query + "/media/recent?client_id=" + self.userCredentials;
+		// Tags
+		// Get a list of recently tagged media
+		getRecentTagged: function () {
+			var self = this,
+				getData = "/tags/" + self.options.query + "/media/recent?client_id=" + self.userCredentials;
 
-                self.fetch( getData ).done( function ( results ) {
-					if ( results.data.length ) {
-						self.display( results );
-					} else {
-						$.error( "Spectragram.js - Error: the tag " + self.options.query + " does not have results." );
-					}
-                } );
-        },
+			self.fetch(getData).done(function (results) {
+				if (results.data.length) {
+					self.display(results);
+				} else {
+					$.error("Spectragram.js - Error: the tag " + self.options.query + " does not have results.");
+				}
+			});
+		},
 
-        fetch: function ( getData ) {
-            var getUrl = this.API_URL + getData;
+		fetch: function (getData) {
+			var getUrl = this.API_URL + getData;
 
-            return $.ajax( {
-                type: "GET",
-                dataType: "jsonp",
-                cache: false,
-                url: getUrl
-            } );
-        },
+			return $.ajax({
+				type: "GET",
+				dataType: "jsonp",
+				cache: false,
+				url: getUrl
+			});
+		},
 
-        display: function ( results ) {
-            var $element,
-            	$image,
-                isWrapperEmpty,
-            	imageGroup = [],
-                imageCaption,
-                imageHeight,
-                imageWidth,
-                max,
-                setSize,
-                size;
+		display: function (results) {
+			var $element,
+				$image,
+				isWrapperEmpty,
+				imageGroup = [],
+				imageCaption,
+				imageHeight,
+				imageWidth,
+				max,
+				setSize,
+				size;
 
-            isWrapperEmpty = $( this.options.wrapEachWith ).length === 0;
+			isWrapperEmpty = $(this.options.wrapEachWith).length === 0;
 
-            if ( results.data === undefined || results.meta.code !== 200 || results.data.length === 0 ) {
-            	if ( isWrapperEmpty ) {
-            		this.$elem.append( this.messages.notFound );
-            	} else {
-                	this.$elem.append( $( this.options.wrapEachWith ).append( this.messages.notFound ) );
-            	}
-            } else {
-            	max = ( this.options.max >= results.data.length ) ? results.data.length : this.options.max;
-            	setSize = this.options.size;
+			if (results.data === undefined || results.meta.code !== 200 || results.data.length === 0) {
+				if (isWrapperEmpty) {
+					this.$elem.append(this.messages.notFound);
+				} else {
+					this.$elem.append($(this.options.wrapEachWith).append(this.messages.notFound));
+				}
+			} else {
+				max = (this.options.max >= results.data.length) ? results.data.length : this.options.max;
+				setSize = this.options.size;
 
-				for ( var i = 0; i < max; i++ ) {
-					if ( setSize === "small" ) {
+				for (var i = 0; i < max; i++) {
+					if (setSize === "small") {
 						size = results.data[i].images.thumbnail.url;
 						imageHeight = results.data[i].images.thumbnail.height;
 						imageWidth = results.data[i].images.thumbnail.width;
-					} else if ( setSize === "medium" ) {
+					} else if (setSize === "medium") {
 						size = results.data[i].images.low_resolution.url;
 						imageHeight = results.data[i].images.low_resolution.height;
 						imageWidth = results.data[i].images.low_resolution.width;
@@ -168,78 +168,77 @@ if ( typeof Object.create !== "function" ) {
 						imageWidth = results.data[i].images.standard_resolution.width;
 					}
 
-					imageCaption = ( results.data[i].caption !== null ) ?
-									$( "<span>" ).text( results.data[i].caption.text ).html() :
-									this.messages.defaultImageAltText;
+					imageCaption = (results.data[i].caption !== null) ?
+						$("<span>").text(results.data[i].caption.text).html() :
+						this.messages.defaultImageAltText;
 
-					$image = $( "<img>", {
+					$image = $("<img>", {
 						alt: imageCaption,
 						attr: {
 							height: imageHeight,
 							width: imageWidth
 						},
 						src: size
-					} );
+					});
 
-					$element = $( "<a>", {
+					$element = $("<a>", {
 						href: results.data[i].link,
 						target: "_blank",
 						title: imageCaption
-					} ).append( $image );
+					}).append($image);
 
-					if ( isWrapperEmpty ) {
-						imageGroup.push( $element );
+					if (isWrapperEmpty) {
+						imageGroup.push($element);
 					} else {
-						imageGroup.push( $( this.options.wrapEachWith ).append( $element ) );
+						imageGroup.push($(this.options.wrapEachWith).append($element));
 					}
 				}
 
-				this.$elem.append( imageGroup );
-            }
-
-			if ( typeof this.options.complete === "function" ) {
-				this.options.complete.call( this );
+				this.$elem.append(imageGroup);
 			}
-        }
-    };
 
-	jQuery.fn.spectragram = function ( method, options ) {
-		if ( jQuery.fn.spectragram.accessData.clientID ) {
+			if (typeof this.options.complete === "function") {
+				this.options.complete.call(this);
+			}
+		}
+	};
 
-			this.each( function () {
-				var instagram = Object.create( Instagram );
+	jQuery.fn.spectragram = function (method, options) {
+		if (jQuery.fn.spectragram.accessData.clientID) {
 
-				instagram.initialize( options, this );
+			this.each(function () {
+				var instagram = Object.create(Instagram);
 
-				if ( instagram[method] ) {
-					return instagram[method]( this );
+				instagram.initialize(options, this);
+
+				if (instagram[method]) {
+					return instagram[method](this);
 				} else {
-					$.error( "Method " + method + " does not exist on jQuery.spectragram" );
+					$.error("Method " + method + " does not exist on jQuery.spectragram");
 				}
 			});
 
 		} else {
-			$.error( "You must define an accessToken and a clientID on jQuery.spectragram" );
+			$.error("You must define an accessToken and a clientID on jQuery.spectragram");
 		}
-    };
+	};
 
-    // Plugin Default Options
-    jQuery.fn.spectragram.options = {
-		complete : null,
+	// Plugin Default Options
+	jQuery.fn.spectragram.options = {
+		complete: null,
 		max: 10,
 		query: "instagram",
 		size: "medium",
 		wrapEachWith: "<li></li>"
-    };
+	};
 
 	// Instagram Access Data
 	jQuery.fn.spectragram.accessData = {
-        accessToken: null,
+		accessToken: null,
 		clientID: null
-    };
+	};
 
-} )( jQuery, window, document );
+})(jQuery, window, document);
 
 
-  
-  
+

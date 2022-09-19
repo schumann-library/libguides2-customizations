@@ -3,28 +3,29 @@ var modalContent = '<div class="modal fade bs-example-modal-sm" tabindex="-1" ro
 $('body').append(modalContent);
 
 //create an alert when form is submitted
-function myfunction(){
-var empty = $('#droparea').find(".fld-input").filter(function() {
-            return this.value === "";
-        });
-        if (!(empty.length)) {
-            //all inputs are filled 
-            $('#contactModal').modal();
-            $('#contactModal').on('hidden.bs.modal',function(){
-                                  
-               submitForm();
-            });
-        }
+function myfunction() {
+  var empty = $('#droparea').find(".fld-input").filter(function () {
+    return this.value === "";
+  });
+  if (!(empty.length)) {
+    //all inputs are filled 
+    $('#contactModal').modal();
+    $('#contactModal').on('hidden.bs.modal', function () {
+
+      submitForm();
+    });
+  }
 };
 
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-  $('#form_save').attr('onclick', '').click(function(){
-event.preventDefault();
-myfunction()});
+  $('#form_save').attr('onclick', '').click(function () {
+    event.preventDefault();
+    myfunction()
+  });
 });
 
 

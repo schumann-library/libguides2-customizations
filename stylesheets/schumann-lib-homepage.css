@@ -3,9 +3,8 @@
 /* BEGIN: schumann-lib-homepage.css */
 
 #alert_banner {
-    background:gold; 
-    color:black;
-    
+    background: gold;
+    color: black;
 }
 
 #s-lg-box-17557888 {
@@ -14,8 +13,8 @@
 }
 
 #s-lg-content-38699514 p {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     line-height: 20px;
 }
 
@@ -46,18 +45,20 @@
 
 @media (min-width:768px) {
     #first_row {
-    background-color: #aaa;
-    background-image: url(https://libapps.s3.amazonaws.com/accounts/44017/images/livingroom-to-cafe-crop-2.jpg);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
+        background-color: #aaa;
+        background-image: url(https://libapps.s3.amazonaws.com/accounts/44017/images/livingroom-to-cafe-crop-2.jpg);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
     }
+
     #s-lg-row-1 {
         background: rgba(247, 247, 247, 0.88);
         border-radius: 10px;
     }
+
     .navbar {
         margin-bottom: 0;
     }

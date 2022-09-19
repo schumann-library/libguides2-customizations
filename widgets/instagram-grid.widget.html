@@ -1,19 +1,20 @@
 <div id="instagram_grid"></div>
-<script type="text/javascript" src="//schumann-library.github.io/libguides2-customizations/javascripts/spectragram.js"></script>
+<script type="text/javascript"
+  src="//schumann-library.github.io/libguides2-customizations/javascripts/spectragram.js"></script>
 
-  <script type="text/javascript"> 
-   
-  
-      //for more about clientID and accessToken, see https://www.instagram.com/developer/
-      //IMPORTANT. PLEASE READ. I'm not at all sure if it's OK to have our access token here, unsecured.
-      //ALSO. Instagram says the access token might expire. At which point we'd have to get a new one. 
-     jQuery.fn.spectragram.accessData = {
-      accessToken: '2210002722.39911ff.2a5468465d274a8f833252cfe882a149',
-      clientID: '39911ffdc52e4874ad5264ac684f64b1'
-      };
-   
-  
-      $('#instagram_grid').spectragram('getSelfMedia',{size:'small',max:'9',wrapEachWith:'<div class="instagram"></div>'}); 
-      
-    
+<script type="text/javascript">
+
+
+  //for more about clientID and accessToken, see https://www.instagram.com/developer/
+  //IMPORTANT. PLEASE READ. I'm not at all sure if it's OK to have our access token here, unsecured.
+  //ALSO. Instagram says the access token might expire. At which point we'd have to get a new one. 
+  jQuery.fn.spectragram.accessData = {
+    accessToken: '2210002722.39911ff.2a5468465d274a8f833252cfe882a149',
+    clientID: '39911ffdc52e4874ad5264ac684f64b1'
+  };
+
+
+  $('#instagram_grid').spectragram('getSelfMedia', { size: 'small', max: '9', wrapEachWith: '<div class="instagram"></div>' });
+
+
 </script>

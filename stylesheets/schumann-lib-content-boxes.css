@@ -1,9 +1,9 @@
+/*not sure if this does anything*/
 /****************************
-***   content-boxes.css   ***
-***                       ***
+***  content-boxes.css  ***
 ****************************/
 
-
-.s-lg-col-boxes .s-lib-box {border:0; box-shadow:none;}
-
-
+.s-lg-col-boxes .s-lib-box {
+    border: 0;
+    box-shadow: none;
+}
