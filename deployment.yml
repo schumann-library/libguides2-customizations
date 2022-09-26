@@ -1,0 +1,13 @@
+name: Testing
+
+on:
+  push:
+    branches:
+      - Quinn-Code-Cleanup
+
+jobs:
+  deployment:
+    environment: github-pages-testing
+    steps:
+      - name: Testing
+        # ...deployment-specific steps
