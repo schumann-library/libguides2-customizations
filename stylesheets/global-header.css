@@ -1,11 +1,6 @@
 /***************************/
-
-
 /**********skip link********/
-
-
 /***************************/
-
 
 /*Move skip link further off the page to allow for larger base font-size */
 
@@ -13,14 +8,10 @@
     top: -90px;
 }
 
-
 /*************************/
-
-
 /***** Global Header *****/
-
-
 /*************************/
+
 #global_header {
     background-color: white;
 }
@@ -28,8 +19,9 @@
 #global_header .navbar-default {
     background: white;
 }
-
-#institutional_header p, #institutional_header a {
+#institutional_header,
+#institutional_header p,
+#institutional_header a {
     color: #ffffff;
     background-color: #202931;
 }
@@ -41,7 +33,7 @@
 
 /*for navigation widget*/
 #global_header .s-lib-box-content {
-padding:0;
+    padding: 0;
 }
 
 /*for navigation widget*/
@@ -52,7 +44,7 @@ padding:0;
 
 /*for navigation widget*/
 #global_header .s-lib-box-title {
-display:none;
+    display: none;
 }
 
 #global_header .navbar-collapse {
@@ -71,23 +63,24 @@ display:none;
     margin: 15px 15px 15px 0;
     max-width: 500px;
     width: 100%;
-    height: 100%;
-    flex: 1 1 auto;
+        height: 100%;
+        flex: 1 1 auto;
 }
 
 #my_library_logo img {
- max-width: 100%;   
+    max-width: 100%;
 }
-    
 
 #my_library_info,
-#hours_link, #my_library_info--social_media a {
+#hours_link,
+#my_library_info--social_media a {
     text-align: center;
     color: #000000;
     font-weight: bold;
 }
 
 #my_navbar {
+    display: none;
     background-color: #000000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -117,7 +110,7 @@ display:none;
 }
 
 #main_menu .open .dropdown-toggle {
-    background-color:#FFCB05;
+    background-color: #FFCB05;
     color: #000;
 }
 
@@ -126,48 +119,161 @@ display:none;
     border-radius: 0;
 }
 
-#main_menu> li>a:focus,
-#main_menu> li>a:hover {
-    background-color: #FFCB05!important;
-    color: #000000!important;
+#main_menu>li>a:focus,
+#main_menu>li>a:hover {
+    background-color: #FFCB05 !important;
+    color: #000000 !important;
 }
 
 #main_menu .dropdown-menu a {
     /*text-transform: uppercase;*/
     padding: .5em 1.5em;
     color: black;
+    text-align: center;
 }
 
-
-
 @media all and (max-width: 991px) {
+    
     #header_flex_container {
         flex-direction: column;
         align-items: center;
     }
+
     #main_menu {
         justify-content: space-around;
     }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 811px) {
+
+    .move {
+        /* transition: all 0.3s ease; */
+        transform: translateX(-100%) !important;
+    }
+
+    .dropdown-menu {
+        /* transition: all 0.3s ease; */
+        position: static;
+        transform: translateX(100%);
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        background-color: black;
+    }
+
+    .dropdown-header {
+        font-weight: bold;
+        padding: unset !important;
+        background: black;
+        text-align: center;
+    }
+
+    .divider {
+        color: #777;
+        margin: 9px 30% !important;
+    }
+
+    .dropdown-menu > li > a:hover {
+        background-color: #FFCB05 !important;
+        color: #000000 !important;
+    }
+
+    .return-lvl {
+        font-weight: bold;
+        text-decoration-line: underline;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        /* color: #777; */
+        color: white !important;
+    }
+
     #main_menu {
+        transform: translateY(100px);
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         padding: 0;
         margin-right: -15px;
         margin-left: -15px;
     }
-   
+
     #main_menu li:last-of-type a {
         border-bottom: none;
     }
+
     #main_menu .open .dropdown-menu {
         float: none;
         border: 0;
         box-shadow: 0 0 0 0;
-        background-color: #ffffff!important;
+        background-color: #000000 !important;
         color: #000000;
     }
-    
+
+    #my_navbar {
+        position: fixed;
+        opacity: 89%;
+        top: 0px;
+        z-index: 500;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .container{
+        width: unset;
+    }
+
+    .navbar-container {
+        text-align: center;
+        display: grid;
+        margin-top: 150px;
+        height: 0px;
+        z-index: 501;
+    }
+
+    .navbar-toggle {
+        position: fixed !important;
+        top: 193px;
+        right: -5px;
+        background-color: black;
+        display: unset;
+        z-index: 501;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: black !important;
+    }
+    /* offsets for navbar options */
+    /* 29px dif */
+    .dropdown-menu.research{
+        transform: translate(100%, 0px) !important;
+    }
+    .dropdown-menu.technology{
+        transform: translate(100%,-47px) !important;
+    }
+    .dropdown-menu.spaces{  
+        transform: translate(100%,-83px) !important;
+    }
+    .dropdown-menu.archives{
+        transform: translate(100%,-117px) !important;
+    }
+    .dropdown-menu.services{
+        transform: translate(100%,-148px) !important;
+    }
+    .dropdown-menu.about{
+        transform: translate(100%,-177px) !important;
+    }
+
+}
+
+@media all and (min-width: 812px){
+    #my_navbar {
+        height: 37px;
+        display: block !important;
+        opacity: 100% !important;
+    }
+
+    .return-lvl {
+        display: none !important;
+    }
 }

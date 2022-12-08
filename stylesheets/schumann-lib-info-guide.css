@@ -1,7 +1,6 @@
 /*********************************
-***   styles for guide menu    ***
-***                            ***
-*********************************/
+*** styles for guide menu  ***
+**********************************/
 
 #s-lg-guide-tabs {
     background: #f8f8f8;
@@ -15,7 +14,7 @@
 
 /*current page - menu item */
 
-#s-lg-tabs-container .nav-pills > .active > a {
+#s-lg-tabs-container .nav-pills>.active>a {
     color: #000000;
     cursor: default;
     background-color: #FFCB05;
@@ -27,13 +26,12 @@
     margin-right: -11px;
 }
 
-#s-lg-tabs-container .s-lg-subtab-ul.nav.nav-pills.nav-stacked > .active > a {   
+#s-lg-tabs-container .s-lg-subtab-ul.nav.nav-pills.nav-stacked>.active>a {
     margin-left: -30px;
     margin-right: -21px;
-    
 }
 
-#s-lg-tabs-container .nav-pills > .active > a::before {
+#s-lg-tabs-container .nav-pills>.active>a::before {
     display: block;
     width: 10px;
     height: 0px;
@@ -45,7 +43,7 @@
     border-right: 10px solid #d6b300;
 }
 
-#s-lg-tabs-container .nav-pills > .active > a:hover {
+#s-lg-tabs-container .nav-pills>.active>a:hover {
     color: #000000;
     border: 0;
     border-radius: 0;
@@ -57,11 +55,11 @@
 
 ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     margin-bottom: 10px;
-
 }
+
 /*other pages - menu items */
 
-#s-lg-tabs-container .nav-pills > li > a {
+#s-lg-tabs-container .nav-pills>li>a {
     border: 0;
     border-radius: 0;
     color: #000000;
@@ -70,14 +68,13 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     background-color: #f8f8f8
 }
 
-#s-lg-tabs-container .nav-pills > li > a:hover {
+#s-lg-tabs-container .nav-pills>li>a:hover {
     border: 0;
     border-radius: 0;
     color: #000000;
     background-color: #f8f8f8;
     text-decoration: underline;
 }
-
 
 /*box-level navigation */
 
@@ -100,8 +97,6 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     color: #000000;
 }
 
-
-
 /* styles for landing page menu */
 /* we add .landing-page to the nav container via javascript so we can style the menu differently on the landing pages*/
 
@@ -111,7 +106,7 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     /*text-transform: uppercase;*/
 }
 
-.landing-page #s-lg-tabs-container .nav-pills > .active > a::before {
+.landing-page #s-lg-tabs-container .nav-pills>.active>a::before {
     display: block;
     width: 10px;
     height: 0px;
@@ -123,10 +118,8 @@ ul.s-lg-subtab-ul.nav.nav-pills.nav-stacked {
     border-right: 20px solid #a94442;
 }
 
-.landing-page #s-lg-tabs-container .nav-pills > .active > a {
+.landing-page #s-lg-tabs-container .nav-pills>.active>a {
     margin-left: -30px;
     padding-left: 34px;
     margin-right: -11px;
-
 }
-

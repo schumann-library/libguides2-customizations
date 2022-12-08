@@ -1,0 +1,106 @@
+/*
+
+    GLOBAL WIDGET SETTINGS
+
+*/
+
+.s-lg-col-boxes .s-lib-box {
+    border: 0;
+    box-shadow: none;
+    margin: 0 0 0;
+}
+
+/*
+
+    ALERT BANNER
+
+*/
+
+#alert_banner {
+    background:#D44242; 
+    color:black;
+}
+
+#s-lg-box-29067875{
+    margin: 0 0 0;
+}
+
+/*
+
+    SEARCHBLASTER
+
+*/
+
+#search_blaster_query {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#search_blaster_text {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 2em;
+    overflow-x: hidden;
+    border-radius: 4px 0px 0px 4px;
+    border: 2px solid #555;
+}
+
+#search_blaster_options_button {
+    border-radius: 0
+}
+
+@media (min-width: 768px) {
+    #search_blaster_options_button .icon {
+          display: none;
+    }
+
+    #search_blaster_options_button .text {
+          display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    #search_blaster_options_button .icon {
+          display: inline;
+    }
+
+    #search_blaster_options_button .text {
+          display: none;
+    }
+}
+
+/* options drop down menu */
+
+#search_blaster_options {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #d9edf7;
+    width: 100%;
+    white-space: normal;
+}
+
+#search_blaster_input .input-group-btn {
+    position: static;
+}
+
+/*
+
+    INSTAGRAM
+
+*/
+
+#instagram_grid {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.instagram {
+    display: inline-block;
+    width: 33%;
+    height: auto;
+}
+
+.instagram img {
+    width: 100%;
+    height: auto;
+}
