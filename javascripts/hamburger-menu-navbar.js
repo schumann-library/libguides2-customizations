@@ -3,13 +3,13 @@ $(document).ready(function () {
     $(".navbar-toggle").click(function () {
 
         $("#my_navbar").fadeToggle(100);
+        $("#main_menu").removeClass('move');
 
     });
 
     $('.dropdown-toggle').on('click', function () {
         
         $(this).parent().parent().toggleClass('move');
-        $(this).lastChild().fadeToggle(0);
 
     });
     
