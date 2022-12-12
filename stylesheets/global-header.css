@@ -268,9 +268,11 @@
 }
 
 @media all and (min-width: 812px){
+    
     #my_navbar {
+        justify-content: center;
+        display: flex !important;
         height: 37px;
-        display: block !important;
         opacity: 100% !important;
     }
 
