@@ -272,7 +272,6 @@
     #my_navbar {
         justify-content: center;
         display: flex !important;
-        height: 37px;
         opacity: 100% !important;
     }
 
