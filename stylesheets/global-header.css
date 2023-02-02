@@ -236,7 +236,7 @@
         right: -5px;
         background-color: #1d252c !important;
         border: 4px solid transparent !important;
-        display: unset;
+        display: unset !important;
         z-index: 501;
     }
 
