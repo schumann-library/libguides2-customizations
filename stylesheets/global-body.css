@@ -4,7 +4,7 @@
 
 */
 
-.s-lg-az-result-share { /* hide share button while it get fixed. */
+#s-lg-az-result-share { /* hide share button while it get fixed. */
     display:  none !important;
 }
 
