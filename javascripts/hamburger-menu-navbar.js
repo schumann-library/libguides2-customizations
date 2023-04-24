@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(".navbar-toggle").click(function () {
 
         $("#my_navbar").fadeToggle(100);
+        $("#main_menu").removeClass('move');
 
     });
 
