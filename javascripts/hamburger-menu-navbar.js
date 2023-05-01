@@ -1,3 +1,5 @@
+// jquery version 1.11.3
+
 $(document).ready(function () {
     
     $(".navbar-toggle").click(function () {
