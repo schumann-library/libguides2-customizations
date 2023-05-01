@@ -43,7 +43,8 @@
     <li role="separator" class="divider"></li>
     ```
 4. Return
-    * needed for mobile navigation
+    * this will not show up on a desktop version of the site.  
+    * this will be used to return to the upper level.
     * needs link the class "return-lvl"
     ```
     <li>
