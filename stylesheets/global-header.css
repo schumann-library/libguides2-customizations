@@ -230,6 +230,7 @@
         z-index: 501;
     }
 
+    /* for hamburger button */
     .navbar-toggle {
         position: fixed !important;
         top: 280px;
