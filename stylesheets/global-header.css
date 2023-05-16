@@ -245,9 +245,7 @@
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
         color: black !important;
     }
-    #main-menu .dropdown-toggle {
-        transform:translateX(100%);
-    }
+
     /* offsets for navbar options */
     /* 29px dif */
     .dropdown-menu.research{
