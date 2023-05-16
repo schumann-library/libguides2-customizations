@@ -144,7 +144,7 @@
     }
 }
 
-@media all and (max-width: 811px) {
+@media all and (max-width: 766px) {
 
     .move {
         /* transition: all 0.3s ease; */
@@ -248,29 +248,29 @@
 
     /* offsets for navbar options */
     /* 29px dif */
-    .open.dropdown-menu.research{
+    .dropdown-menu.research{
         transform: translate(100%, 0px) !important;
     }
-    .open.dropdown-menu.technology{
+   .dropdown-menu.technology{
         transform: translate(100%,-47px) !important;
     }
-    .open.dropdown-menu.spaces{  
+    .dropdown-menu.spaces{  
         transform: translate(100%,-83px) !important;
     }
-    .open.dropdown-menu.archives{
+    .dropdown-menu.archives{
         transform: translate(100%,-117px) !important;
     }
-    .open.dropdown-menu.services{
+    .dropdown-menu.services{
         transform: translate(100%,-148px) !important;
     }
-   .open.dropdown-menu.about{
+  .dropdown-menu.about{
         transform: translate(100%,-177px) !important;
     }
 
 }
 
 
-@media all and (min-width: 812px){
+@media all and (min-width: 766px){
     
     #my_navbar {
         justify-content: center;
