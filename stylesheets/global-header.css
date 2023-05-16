@@ -248,22 +248,22 @@
 
     /* offsets for navbar options */
     /* 29px dif */
-    .dropdown-menu.research{
+    .open.dropdown-menu.research{
         transform: translate(100%, 0px) !important;
     }
-    .dropdown-menu.technology{
+    .open.dropdown-menu.technology{
         transform: translate(100%,-47px) !important;
     }
-    .dropdown-menu.spaces{  
+    .open.dropdown-menu.spaces{  
         transform: translate(100%,-83px) !important;
     }
-    .dropdown-menu.archives{
+    .open.dropdown-menu.archives{
         transform: translate(100%,-117px) !important;
     }
-    .dropdown-menu.services{
+    .open.dropdown-menu.services{
         transform: translate(100%,-148px) !important;
     }
-    .dropdown-menu.about{
+   .open.dropdown-menu.about{
         transform: translate(100%,-177px) !important;
     }
 
