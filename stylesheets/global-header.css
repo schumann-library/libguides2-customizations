@@ -248,6 +248,131 @@
     /* offsets for navbar options */
     /* 29px dif */
     .dropdown-menu.research{
+        transform: translate(150%, 0px) !important;
+    }
+    .dropdown-menu.technology{
+        transform: translate(150%,-47px) !important;
+    }
+    .dropdown-menu.spaces{  
+        transform: translate(150%,-83px) !important;
+    }
+    .dropdown-menu.archives{
+        transform: translate(150%,-117px) !important;
+    }
+    .dropdown-menu.services{
+        transform: translate(150%,-148px) !important;
+    }
+    .dropdown-menu.about{
+        transform: translate(150%,-177px) !important;
+    }
+
+}
+
+
+@media all and (max-width: 766px) {
+
+    .move {
+        /* transition: all 0.3s ease; */
+        transform: translateX(-100%) !important;
+    }
+
+    .dropdown-menu {
+        /* transition: all 0.3s ease; */
+        position: static;
+        transform: translateX(100%);
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        background-color: black;
+    }
+
+    .dropdown-header {
+        font-weight: bold;
+        padding: unset !important;
+        background: black;
+        text-align: center;
+    }
+
+    .divider {
+        color: #777;
+        margin: 9px 30% !important;
+    }
+
+    .dropdown-menu > li > a:hover {
+        background-color: #FFCB05 !important;
+        color: #000000 !important;
+    }
+
+    .return-lvl {
+        font-weight: bold;
+        text-decoration-line: underline;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        /* color: #777; */
+        color: white !important;
+    }
+
+    #main_menu {
+        transform: translateY(100px);
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    #main_menu li:last-of-type a {
+        border-bottom: none;
+    }
+
+    #main_menu .open .dropdown-menu {
+        float: none;
+        border: 0;
+        box-shadow: 0 0 0 0;
+        background-color: #000000 !important;
+        color: #000000;
+    }
+
+    #my_navbar {
+        position: fixed;
+        opacity: 89%;
+        top: 0px;
+        z-index: 500;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .container{
+        width: unset;
+    }
+
+    .navbar-container {
+        text-align: center;
+        display: grid;
+        margin-top: 150px;
+        height: 0px;
+        z-index: 501;
+    }
+
+    /* for hamburger button */
+    .navbar-toggle {
+        position: fixed !important;
+        top: 280px;
+        right: -5px;
+        background-color: #1d252c !important;
+        border: 4px solid transparent !important;
+        display: unset !important;
+        z-index: 501;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: black !important;
+    }
+    /* offsets for navbar options */
+    /* 29px dif */
+    .dropdown-menu.research{
         transform: translate(100%, 0px) !important;
     }
     .dropdown-menu.technology{
