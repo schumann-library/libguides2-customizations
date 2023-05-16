@@ -154,7 +154,7 @@
     .dropdown-menu {
         /* transition: all 0.3s ease; */
         position: static;
-        transform: translateX(100%);
+    transform: translateX(100%)!important;
         margin-top: auto;
         margin-bottom: auto;
         text-align: center;
@@ -189,7 +189,7 @@
     }
 
     #main_menu {
-        transform: translateY(100px);
+        transform: translateY(100px)!important;
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         padding: 0;
