@@ -1,4 +1,4 @@
-* all the font is helvetica on the page */
+/* all the font is helvetica on the page */
 * {
     font-family: Helvetica, Sans-Serif;
     }
@@ -16,7 +16,7 @@ float:left!important;
 }
 
 /*override bootstrap auto styling */
-.navbar-default{
+.header-default{
 background-color: black!important;
 }
 
@@ -85,7 +85,7 @@ adding a slight shadow
     text-decoration: none;
     display: block;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: normal;
     letter-spacing: .08em;
 }
