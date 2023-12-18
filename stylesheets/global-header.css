@@ -1,24 +1,37 @@
-/***************************/
-/**********skip link********/
-/***************************/
-
+* all the font is helvetica on the page */
+* {
+    font-family: Helvetica, Sans-Serif;
+    }
 /*Move skip link further off the page to allow for larger base font-size */
 
 #s-lg-public-skiplink {
     top: -90px;
 }
 
-/*************************/
-/***** Global Header *****/
-/*************************/
+/*override bootstrap auto styling */
+.navbar-toggle {
+float:left!important;
+ background-color:#FFCB05!important;
+ border: none!important;
+}
+
+/*override bootstrap auto styling */
+.navbar-default{
+background-color: black!important;
+}
+
+/*makes dropdown-header leading capitalization */
+.dropdown-header {
+    text-transform:capitalize!important;
+    font-weight: normal!important;
+}
+/*background of everything is default white above the nav bar */
 
 #global_header {
     background-color: white;
 }
 
-#global_header .navbar-default {
-    background: white;
-}
+/*this is the wentowrth logo and WIT website link  styling */
 #institutional_header,
 #institutional_header p,
 #institutional_header a {
@@ -26,32 +39,9 @@
     background-color: #202931;
 }
 
-#global_header nav {
-    border: 0;
-    border-radius: 0;
-}
 
-/*for navigation widget*/
-#global_header .s-lib-box-content {
-    padding: 0;
-}
 
-/*for navigation widget*/
-#global_header .s-lib-box.s-lib-box-std {
-    border: 0;
-    box-shadow: 0 0 0 0;
-}
-
-/*for navigation widget*/
-#global_header .s-lib-box-title {
-    display: none;
-}
-
-#global_header .navbar-collapse {
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
+/*this styles everything after the WIT logo and website link and before the nav bar */
 #header_flex_container {
     display: flex;
     flex-wrap: wrap;
@@ -59,18 +49,17 @@
     margin-bottom: 15px;
 }
 
-#my_library_logo {
-    margin: 15px 15px 15px 0;
+/*styling for DDSL&LC logo */
+#my_library_logo img{
+    margin: 15px 15px 15px 0px;
     max-width: 500px;
     width: 100%;
-        height: 100%;
-        flex: 1 1 auto;
+    height: 100%;
+    flex: 1 1 auto;
 }
 
-#my_library_logo img {
-    max-width: 100%;
-}
 
+/* hours, phone number, social media */
 #my_library_info,
 #hours_link,
 #my_library_info--social_media a {
@@ -79,60 +68,52 @@
     font-weight: bold;
 }
 
+/*background color of nav bar is black
+adding a slight shadow
+# no border
+#centering it on page */
 #my_navbar {
-    display: none;
     background-color: #000000;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0px!important;
+    width: 75%;
+    margin: auto;
 }
 
-#main_menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: #000000;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
-}
 
+/* the nav bar items (words like research, technology, spaces, archives, services, about) styling */
 #main_menu .dropdown-toggle {
     text-decoration: none;
     display: block;
-    padding: .5em 1em;
     color: #ffffff;
     font-size: 1.25em;
     font-weight: normal;
-    letter-spacing: .0714em;
+    letter-spacing: .08em;
 }
 
+/* when a nav bar item is selected and the dropdown is open, the background of it will be gold, and the text whill be black */
 #main_menu .open .dropdown-toggle {
     background-color: #FFCB05;
     color: #000;
 }
 
+/*drop down menu have no border radius [square], and no margin on the top */
 #main_menu .dropdown-menu {
     margin-top: 0;
     border-radius: 0;
 }
 
-#main_menu>li>a:focus,
-#main_menu>li>a:hover {
-    background-color: #FFCB05 !important;
-    color: #000000 !important;
-}
 
+/*makes text black in dropdown menu and align them center  when full screen*/
 #main_menu .dropdown-menu a {
-    /*text-transform: uppercase;*/
     padding: .5em 1.5em;
     color: black;
     text-align: center;
 }
 
-@media all and (max-width: 991px) {
+
+
+/* FOR ANYTHING PHONE AND SMALLER */
+@media all and (max-width: 768px) {
     
     #header_flex_container {
         flex-direction: column;
@@ -142,143 +123,30 @@
     #main_menu {
         justify-content: space-around;
     }
-}
 
-@media all and (max-width: 766px) {
-
-    .move {
-        /* transition: all 0.3s ease; */
-        transform: translateX(-100%) !important;
+    /*makes text WHITE in dropdown menu and align them left when full screen*/
+    #main_menu .dropdown-menu a {
+        padding: .5em 1.5em;
+        color: white;
+        text-align: left;
     }
 
-    .dropdown-menu {
-        /* transition: all 0.3s ease; */
-        position: static;
-    transform: translateX(100%);
-        margin-top: auto;
-        margin-bottom: auto;
-        text-align: center;
-        background-color: black;
+    #main_menu .dropdown a:focus,
+    #main_menu .dropdown a:hover {
+        background-color: #FFCB05;
+        color: #000000;  
+    }
+
+    #main_menu .dropdown-menu li a:focus,
+    #main_menu .dropdown-menu li a:hover {
+    background-color: #FFCB05;
+    color: #000000;
     }
 
     .dropdown-header {
-        font-weight: bold;
-        padding: unset !important;
-        background: black;
-        text-align: center;
+        color: white!important;
     }
-
-    .divider {
-        color: #777;
-        margin: 9px 30% !important;
-    }
-
-    .dropdown-menu > li > a:hover {
-        background-color: #FFCB05 !important;
-        color: #000000 !important;
-    }
-
-    .return-lvl {
-        font-weight: bold;
-        text-decoration-line: underline;
-    }
-
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        /* color: #777; */
-        color: white !important;
-    }
-
-    #main_menu {
-        transform: translateY(100px);
-        -webkit-flex-flow: column wrap;
-        flex-flow: column wrap;
-        padding: 0;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-
-    #main_menu li:last-of-type a {
-        border-bottom: none;
-    }
-
-    #main_menu .open .dropdown-menu {
-        float: none;
-        border: 0;
-        box-shadow: 0 0 0 0;
-        background-color: #000000 !important;
-        color: #000000;
-    }
-
-    #my_navbar {
-        position: fixed;
-        opacity: 89%;
-        top: 0px;
-        z-index: 500;
-        width: 100% !important;
-        height: 100% !important;
-    }
-
-    .container{
-        width: unset;
-    }
-
-    .navbar-container {
-        text-align: center;
-        display: grid;
-        margin-top: 150px;
-        height: 0px;
-        z-index: 501;
-    }
-
-    /* for hamburger button */
-    .navbar-toggle {
-        position: fixed !important;
-        top: 280px;
-        right: -5px;
-        background-color: #1d252c !important;
-        border: 4px solid transparent !important;
-        display: unset !important;
-        z-index: 501;
-    }
-
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, 
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-        color: black !important;
-    }
-
-    /* offsets for navbar options */
-    /* 29px dif */
-    .dropdown-menu.research{
-        transform: translate(100%, 0px) !important;
-    }
-   .dropdown-menu.technology{
-        transform: translate(100%,-47px) !important;
-    }
-    .dropdown-menu.spaces{  
-        transform: translate(100%,-83px) !important;
-    }
-    .dropdown-menu.archives{
-        transform: translate(100%,-117px) !important;
-    }
-    .dropdown-menu.services{
-        transform: translate(100%,-148px) !important;
-    }
-  .dropdown-menu.about{
-        transform: translate(100%,-177px) !important;
-    }
-
 }
 
-
-@media all and (min-width: 767px){
     
-    #my_navbar {
-        justify-content: center;
-        display: flex !important;
-        opacity: 100% !important;
-    }
 
-    .return-lvl {
-        display: none !important;
-    }
-}
