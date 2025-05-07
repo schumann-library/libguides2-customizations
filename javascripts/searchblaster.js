@@ -8,14 +8,14 @@ $(document).on('click', '.dropdown-menu', function (e) {
 
 // append selected publication type limits to search query
 
-// $("#search_blaster_form").submit(function() {
+ $("#search_blaster_form").submit(function() {
 //  // Let's find the input to check
-// $checks = $(":checkbox");
-//  var string = $checks.filter("#publication_type_limits input:checkbox:checked").map(function() {
-//    return this.value;
-//  }).get().join(" OR ");
-//  $('#search_blaster_query').val(function(index, value) {
-//    return value + " " + string + "";
-//  });
+ $checks = $(":checkbox");
+  var string = $checks.filter("#publication_type_limits input:checkbox:checked").map(function() {
+    return this.value;
+  }).get().join(" OR ");
+  $('#search_blaster_query').val(function(index, value) {
+    return value + " " + string + "";
+  });
 
-// });
+ });
