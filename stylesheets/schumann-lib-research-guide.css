@@ -98,9 +98,7 @@ ul {
 
 /**** Side Nav Bar ****/
 
-#s-lg-tabs-container .nav-pills>li>a {
-    padding: 10px 15px;
-}
+
 
 #s-lg-guide-tabs .list-group-item>a {
     display: block;
